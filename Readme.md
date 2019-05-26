@@ -1,6 +1,6 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Татьяна Смирнова](https://up.htmlacademy.ru/adaptive/16/user/852387).
+* Студент: [Альберт Зубов](https://htmlacademy.ru/profile/id915403).
 * Наставник: `Неизвестно`.
 
 ---
