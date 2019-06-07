@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Альберт Зубов](https://htmlacademy.ru/profile/id915403).
-* Наставник: `Неизвестно`.
+* Наставник: [Олежка Зубов](https://htmlacademy.ru/profile/id42701)
 
 ---
 
