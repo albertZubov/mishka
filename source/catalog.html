@@ -1,122 +1,91 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<title>HTML Academy: Мишка</title>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Мишка</title>
 </head>
 <body>
-	<header class="page-header">
-		<nav class="main-nav">
-			<button class="main-nav__toggle" type="button">Открыть меню</button>
-			<ul class="main-nav__list site-list">
-				<li class="site-list__item">
-					<a href="#0">Каталог товаров</a>
-				</li>
-				<li class="site-list__item">
-					<a href="#0">Вязание на заказ</a>
-				</li>
-			</ul>
-			<a href="#0" class="page-header__logo">
-				<img src="http://placehold.it/150x100" alt="Интернет-магазин MISHKA" width="120" height="40" class="page-header__logo-image">
-			</a>
-			<form action="#0" class="site-list__item-search-form"><input type="search" name="search">
-			</form>
-			<ul class="main-nav__list user-list">
-				<li class="user-list__item">
-					<a href="#0">Корзина: пока пуста</a>
-				</li>
-			</ul>
-		</nav>
-		<nav class="additional-nav">
-			<ul class="additional-nav__list">
-				<li class="additional-nav__item">
-					<a href="#0">Новые поступления</a>
-				</li>
-				<li class="additional-nav__item">
-					<a href="#0">Распродажа</a>
-				</li>
-				<li class="additional-nav__item">
-					<a href="#0">Бесплатная доставка по России</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
-	<main class="page-main">
-		<h1 class="page-main__title-catalog">Каталог товаров</h1>
-		<section class="catalog">
-			<h2 class="visually-hidden">Полный перечень товаров интернет-магазина Mishka</h2>
-			<ul class="catalog__list">
-				<li class="catalog__item">
-					<img src="http://placehold.it/150x100" alt="Игрушка Зайчик-попрыгайчик" class="catalog__image-product">
-					<a href="#0" class="catalog__link-title">
-						<h3 class="catalog__title-product">Зайчик-попрыгайчик</h3>
-					</a>
-					<p class="catalog__description-product">Рост 30 см, вес 200г</p>
-					<p class="catalog__price-favorites">
-						<span class="catalog__price-product">1 200 руб.</span>
-						<button class="catalog__btn-favorites">Кнопка Добавить в избранное</button>
-					</p>
-				</li>
-				<li class="catalog__item">
-					<img src="http://placehold.it/150x100" alt="Корзина для белья" class="catalog__image-product">
-					<a href="#0" class="catalog__link-title">
-						<h3 class="catalog__title-product">Корзина для белья</h3>
-					</a>
-					<p class="catalog__description-product">Диаметр 15 см, высота 10 см</p>
-					<p class="catalog__price-favorites">
-						<span class="catalog__price-product">690 руб.</span>
-						<button class="catalog__btn-favorites">Кнопка Добавить в избранное</button>
-					</p>
-				</li>
-				<li class="catalog__item">
-					<img src="http://placehold.it/150x100" alt="Большая корзина для игрушек" class="catalog__image-product">
-					<a href="#0" class="catalog__link-title">
-						<h3 class="catalog__title-product">Большая корзина для игрушек
-						</h3>
-					</a>
-					<p class="catalog__description-product">Диаметр 30 см, высота 30 см</p>
-					<p class="catalog__price-favorites">
-						<span class="catalog__price-product">1 500 руб.</span>
-						<button class="catalog__btn-favorites">Кнопка добавить в избранное</button>
-					</p>
-				</li>
-				<li class="catalog__item production-process">
-					<video src="#0" class="catalog__process-video"></video>
-					<a href="#0" class="catalog__link-title">
-						<h3 class="catalog__title-product">Процесс производства
-						</h3>
-					</a>
-					<p class="catalog__description-product">
-						По просьбам наших любимых фолловеров мы сняли для вас подробное видо о том, как появляются наши товары.
-					</p>
-					<a href="#0" class="catalog__link-order">сделать заказ</a>
-				</li>
-			</ul>
-		</section>
-	</main>
-	<footer class="page-footer">
-		<div class="page-footer__wrapper">
-			<a href="#0" class="page-footer__logo">
-				<img src="http://placehold.it/150x100" alt="Интернет-магазин MISHKA" width="120" height="40" class="page-footer__logo-image">
-			</a>
-			<div class="page-footer__social social">
-				<ul class="social__list">
-					<li class="social__item">
-						<a class="social__link social__link--instagram" href="#0">Мы в Инстаграме</a>
-					</li>
-					<li class="social__item">
-						<a class="social__link social__link--facebook" href="#0">Мы в Фейсбуке</a>
-					</li>
-					<li class="social__item">
-						<a class="social__link social__link--twitter" href="#0">Мы в Твиттере</a>
-					</li>
-				</ul>
-			</div>
-			<div class="page-footer__copyright copyright">
-				<b class="copyright__text">Разработано:</b>
-				<a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-			</div>
-		</div>
-	</footer>
+  <header class="page-header">
+    <nav class="main-nav">
+      <a href="#0" class="page-header__logo">
+        <img src="http://placehold.it/150x100" alt="Интернет-магазин MISHKA" width="120" height="40" class="page-header__logo-image">
+      </a>
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="page-main__title">Каталог товаров</h1>
+    <section class="catalog">
+      <h2 class="visually-hidden">Полный перечень товаров интернет-магазина Mishka</h2>
+      <ul class="catalog__list">
+        <li class="catalog-item">
+          <img class="catalog-item__image-product" src="http://placehold.it/150x100" alt="Игрушка Зайчик-попрыгайчик">
+          <a href="#0" class="catalog-item__link-title">
+            <h3 class="catalog-item__title-product">Зайчик-попрыгайчик</h3>
+          </a>
+          <p class="catalog-item__description-product">Рост 30 см, вес 200г</p>
+          <p class="catalog-item__price-favorites">
+            <span class="catalog-item__price-product">1 200 руб.</span>
+            <button class="catalog-item__btn-add-basket">Кнопка Добавить в корзину</button>
+          </p>
+        </li>
+        <li class="catalog-item">
+          <img class="catalog-item__image-product" src="http://placehold.it/150x100" alt="Корзина для белья">
+          <a href="#0" class="catalog-item__link-title">
+            <h3 class="catalog-item__title-product">Корзина для белья</h3>
+          </a>
+          <p class="catalog-item__description-product">Диаметр 15 см, высота 10 см</p>
+          <p class="catalog-item__price-favorites">
+            <span class="catalog-item__price-product">690 руб.</span>
+            <button class="catalog-item__btn-add-basket">Кнопка Добавить в корзину</button>
+          </p>
+        </li>
+        <li class="catalog-item">
+          <img class="catalog-item__image-product" src="http://placehold.it/150x100" alt="Большая корзина для игрушек">
+          <a href="#0" class="catalog-item__link-title">
+            <h3 class="catalog-item__title-product">Большая корзина для игрушек
+            </h3>
+          </a>
+          <p class="catalog-item__description-product">Диаметр 30 см, высота 30 см</p>
+          <p class="catalog-item__price-favorites">
+            <span class="catalog-item__price-product">1 500 руб.</span>
+            <button class="catalog-item__btn-add-basket">Кнопка добавить в корзину</button>
+          </p>
+        </li>
+      </ul>
+      <div class="production-process">
+        <a href="#0" class="production-process__link-title">
+          <h3 class="production-process__title">Процесс производства
+          </h3>
+        </a>
+        <img src="#0" class="production-process__video" width="200" height="200" alt="Процесс производства"></img>
+        <p class="production-process__description">
+          По просьбам наших любимых фолловеров мы сняли для вас подробное видо о том, как появляются наши товары.
+        </p>
+        <button type="submit" class="production-process__btn-order button">сделать заказ</button>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#0">Мы в Инстаграме</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#0">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#0">Мы в Твиттере</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
