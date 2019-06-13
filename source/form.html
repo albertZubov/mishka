@@ -26,7 +26,7 @@
               <label class="btn-radio__label"><input class="btn-radio__input" type="radio" name="type-product" value="interior-accessories" checked>
               Аксессуар для интерьера</label>
             </li>
-            <li >
+            <li class="btn-radio">
               <label class="btn-radio__label"><input class="btn-radio__input" type="radio" name="type-product" value="children-toy" >Детская игрушка</label>
             </li>
           </ul>
@@ -57,25 +57,27 @@
         <fieldset class="form__fieldset">
           <legend class="form__title">фио</legend>
           <ul class="form__list form__list--fio">
-            <li class="field-name">
-              <label class="field-name__label">Имя:<input class="field-name__input" type="text" placeholder="Введите ваше имя&#9913;" name="name" ></label>
+            <li class="field-data">
+              <label class="field-data__label">Имя:<input class="field-data__input" type="text" placeholder="Введите ваше имя&#9913;" name="name" ></label>
             </li>
-            <li class="field-surname">
-              <label class="field-surname__label">Фамилия:<input class="field-surname__input" type="text" placeholder="Укажите фамилию&#9913;" name="surname" ></label>
+            <li class="field-data">
+              <label class="field-data__label">Фамилия:<input class="field-data__input" type="text" placeholder="Укажите фамилию&#9913;" name="surname" ></label>
             </li>
-            <li class="field-middle-name">
-              <label class="field-middle-name__label">Отчество:<input class="field-middle-name__input" type="text" placeholder="Отчество, если желаете" name="middle-name" ></label>
+            <li class="field-data-name">
+              <label class="field-data__label">Отчество:<input class="field-data__input" type="text" placeholder="Отчество, если желаете" name="middle-name"></label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="form__title">тел</legend>
-          <label class="form__label"><input class="form__input" type="tel" name="phone" placeholder="+7 XXX XXX XX XX&#9913;"></label>
+          <div class="field-data field-data--phone">
+            <label class="field-data__label"><input class="field-data__input" type="tel" name="phone" placeholder="+7 XXX XXX XX XX&#9913;"></label>
+          </div>
         </fieldset>
         <fieldset  class="form__fieldset">
           <legend  class="form__title">e-mail</legend>
-          <div class="field-email">
-            <label class="field-email__label"><input class="field-email__input" type="email" name="email" placeholder="Ваш email&#9913;"></label>
+          <div class="field-data field-data--email">
+            <label class="field-data__label"><input class="field-data__input" type="email" name="email" placeholder="Ваш email&#9913;"></label>
           </div>
         </fieldset>
         <fieldset class="form__fieldset">
@@ -105,7 +107,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </div>
   </footer>
