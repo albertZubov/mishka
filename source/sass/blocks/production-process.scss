@@ -1,0 +1,40 @@
+.production-process {
+  line-height: 0;
+}
+
+.production-process__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: $border;
+  padding: 26px 33px;
+}
+
+.production-process__wrapper svg {
+  flex-shrink: 0;
+}
+
+.production-process__title {
+  @include title-h3;
+}
+
+.production-process__link-title {
+  text-decoration: none;
+  margin-left: 25px;
+}
+
+.production-process__wrapper-container {
+  padding: 33px;
+  border: $border;
+}
+
+.production-process__description {
+  margin: 0;
+  font-size: 13px;
+  line-height: 24px;
+  margin-bottom: 27px;
+}
+
+.production-process__btn-order {
+  @include button;
+}

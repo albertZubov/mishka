@@ -1,0 +1,77 @@
+.form {
+  padding: 25px 30px 55px;
+}
+
+.form__preface {
+  margin: 0;
+  font-size: 13px;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+  margin-bottom: 30px;
+}
+
+.form__title {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #62d1ba;
+  }
+}
+
+.form__title-legend {
+  min-width: 62px;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #62d1ba;
+}
+
+.form__title-legend--email {
+  min-width: 81px;
+}
+
+.form__list {
+  @include list-dumping;
+  padding-top: 25px;
+}
+
+.form__textarea {
+  width: 100%;
+  min-height: 162px;
+  margin: 0;
+  padding: 15px;
+  margin-top: 22px;
+  margin-bottom: 16px;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  font-family: $font;
+  @include font-label;
+  font-weight: 400;
+  @include placeholder {
+    color: #4444444d;
+  }
+}
+
+.form__footnote-surely {
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 30px;
+}
+
+.form__btn-sending {
+  @include button;
+}

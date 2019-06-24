@@ -1,0 +1,44 @@
+@import "variables.scss";
+@import "mixins.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/sections-product.scss";
+@import "blocks/product-week.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-main.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/fonts.scss";
+@import "blocks/shortly-about.scss";
+@import "blocks/responses.scss";
+@import "blocks/contacts.scss";
+@import "blocks/catalog.scss";
+@import "blocks/catalog-item.scss";
+@import "blocks/production-process.scss";
+@import "blocks/form.scss";
+@import "blocks/btn-radio.scss";
+@import "blocks/btn-checkbox.scss";
+@import "blocks/field-data.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font;
+  font-weight: 400;
+  font-size: 15px;
+  color: $font-color;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+svg {
+ fill: #63d1bb;
+}

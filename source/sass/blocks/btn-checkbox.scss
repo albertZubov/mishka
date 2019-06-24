@@ -1,0 +1,13 @@
+.btn-checkbox {
+  display: flex;
+}
+
+.btn-checkbox__input {
+  margin: 0;
+  @include visually-hidden;
+}
+
+.btn-checkbox__label {
+  @include font-label;
+  padding-left: 62px;
+}

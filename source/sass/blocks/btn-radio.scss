@@ -1,0 +1,37 @@
+.btn-radio {
+  display: flex;
+}
+
+/* .btn-radio__svg-wrapper {
+  position: relative;
+  cursor: pointer;
+  &::before {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 12px;
+    left: 13px;
+    width: 16px;
+    height: 16px;
+    background: #62d1ba;
+    border-radius: 50%;
+  }
+}
+
+#btn-radio-on:checked~.btn-radio__svg-wrapper::before,
+#btn-radio-off:checked~.btn-radio__svg-wrapper::before {
+  display: block;
+} */
+
+.btn-radio__input {
+  margin: 0;
+  @include visually-hidden;
+}
+
+.btn-radio__label {
+  @include font-label;
+  padding-left: 22px;
+  padding-top: 10px;
+}
+
+

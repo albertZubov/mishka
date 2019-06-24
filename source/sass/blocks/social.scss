@@ -1,0 +1,22 @@
+.social {
+  border-bottom: $border;
+}
+
+.social__list {
+  @include list-dumping;
+  display: flex;
+  justify-content: center;
+  padding: 25px 0;
+}
+
+.social__item {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.social__link {
+  & svg {
+    fill: #231F20;
+  }
+}
