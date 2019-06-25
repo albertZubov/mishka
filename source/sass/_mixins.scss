@@ -1,0 +1,79 @@
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin title-h1 {
+  font-family: $font;
+  font-size: 27px;
+  line-height: 30px;
+  color: $title-color;
+  font-weight: 700;
+  margin: 0;
+}
+
+@mixin title-h2 {
+  font-family: $font;
+  font-size: 25px;
+  line-height: 30px;
+  color: $title-color;
+  font-weight: 700;
+  margin: 0;
+}
+
+@mixin title-h3 {
+  font-family: $font;
+  font-size: 17px;
+  line-height: 24px;
+  color: $title-color;
+  font-weight: 700;
+  margin: 0;
+}
+
+@mixin list-dumping {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin button-link {
+  color: #444444;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+  border: 2px solid #444444;
+  padding: 14px 0;
+}
+
+@mixin button {
+  color: #444444;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+  border: 2px solid #444444;
+  padding: 14px 0;
+  width: 100%;
+  background: transparent;
+  cursor: pointer;
+}
+
+@mixin font-label {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content; }
+  &:-moz-placeholder           { @content; }
+  &::-moz-placeholder          { @content; }
+  &:-ms-input-placeholder      { @content; }
+}

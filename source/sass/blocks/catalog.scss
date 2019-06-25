@@ -1,0 +1,7 @@
+.catalog {
+  padding: 30px 30px 58px;
+}
+
+.catalog__list {
+  @include list-dumping;
+}
