@@ -1,0 +1,15 @@
+@media (min-width: $tablet-width) {
+  .about {
+    background: url(../img/bg-zigzag-line.svg) no-repeat center bottom;
+    padding-bottom: 90px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    padding: 0 100px;
+    padding-bottom: 90px;
+    margin-bottom: 70px;
+  }
+}

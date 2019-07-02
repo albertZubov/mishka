@@ -9,7 +9,7 @@
   font-size: 18px;
   padding: 17px 0;
   border: none;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid $title-color;
   @include placeholder {
     color: #4444444d;
   }

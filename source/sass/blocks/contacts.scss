@@ -41,10 +41,145 @@
 }
 
 .contacts__maps-image {
-  max-width: 100%;
+  width: 100%;
+  object-fit: contain;
   margin-bottom: 37px;
+  height: fit-content;
 }
 
 .contacts__btn-wtite {
   @include button;
+}
+
+.contacts__title-wrapper {
+  & svg {
+    display: none;
+  }
+}
+
+.contacts__maps-image-tablet {
+  display: none;
+}
+
+.contacts__maps-image-desktop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+  }
+
+  .contacts__title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    & svg {
+      display: block;
+    }
+  }
+
+  .contacts__block-email {
+    width: 50%;
+    align-items: flex-start;
+  }
+
+  .contacts__block-adress {
+    width: 50%;
+    padding-right: 70px;
+    box-sizing: border-box;
+  }
+
+  .contacts__maps-image {
+    display: none;
+  }
+
+  .contacts__maps-image-tablet {
+    display: block;
+    margin-bottom: 37px;
+
+    @include img-maxsize;
+  }
+
+  .contacts__btn-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contacts__btn-wtite {
+    width: auto;
+    padding: 15px 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    display: flex;
+    padding: 0 100px;
+  margin-bottom: 105px;
+  }
+
+  .contacts__wrapper {
+    padding: 0;
+    margin-bottom: auto;
+  }
+
+  .contacts__title {
+    order: 2;
+    margin: 0;
+    padding-left: 60px;
+
+    @include fontSize-desktop;
+  }
+
+  .contacts__title-wrapper {
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 35px;
+
+    & svg {
+      padding-left: 63px;
+    }
+  }
+
+  .contacts__maps-image-tablet {
+    display: none;
+  }
+
+  .contacts__wrapper-desktop {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts__image-wrapper {
+    width: 50%;
+  }
+
+  .contacts__maps-image-desktop {
+    display: block;
+    object-fit: contain;
+    height: fit-content;
+    width: 100%;
+  }
+
+  .contacts__block-email {
+    width: 100%;
+    padding-left: 173px;
+  }
+
+  .contacts__block-adress {
+    padding-left: 173px;
+    padding-right: 58px;
+    width: 100%;
+  }
+
+  .contacts__btn-wrapper {
+    padding: 0;
+    justify-content: flex-start;
+    padding-left: 173px;
+  }
 }

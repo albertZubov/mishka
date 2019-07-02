@@ -43,22 +43,22 @@
 }
 
 @mixin button-link {
-  color: #444444;
+  color: $font-color;
   text-transform: uppercase;
   font-weight: 700;
   display: block;
   text-align: center;
-  border: 2px solid #444444;
+  border: 2px solid $font-color;
   padding: 14px 0;
 }
 
 @mixin button {
-  color: #444444;
+  color: $font-color;
   text-transform: uppercase;
   font-weight: 700;
   display: block;
   text-align: center;
-  border: 2px solid #444444;
+  border: 2px solid $font-color;
   padding: 14px 0;
   width: 100%;
   background: transparent;
@@ -76,4 +76,15 @@
   &:-moz-placeholder           { @content; }
   &::-moz-placeholder          { @content; }
   &:-ms-input-placeholder      { @content; }
+}
+
+@mixin img-maxsize {
+  object-fit: contain;
+  height: fit-content;
+  width: 100%;
+}
+
+@mixin fontSize-desktop {
+  font-size: 53px;
+  line-height: 57px;
 }

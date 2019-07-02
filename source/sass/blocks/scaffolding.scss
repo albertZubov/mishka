@@ -1,0 +1,22 @@
+body {
+  padding: 0;
+  font-family: $font;
+  font-weight: 400;
+  font-size: 15px;
+  color: $font-color;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+ fill: #63d1bb;
+}

@@ -1,0 +1,20 @@
+.site-nav {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .site-nav {
+    display: flex;
+  }
+
+  .site-nav__list {
+    position: absolute;
+    top: 121px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-nav__list {
+    position: static;
+  }
+}

@@ -20,3 +20,9 @@
     fill: #231F20;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .social {
+    border: none;
+  }
+}

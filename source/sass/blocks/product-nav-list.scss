@@ -1,0 +1,42 @@
+
+
+.product-nav-list {
+  @include list-dumping;
+
+  display: none;
+}
+
+.product-nav-list__item {
+  & a {
+    text-decoration: none;
+    font-weight: 700;
+    color: $font-color;
+  }
+
+  &--delivery {
+    margin-left: auto;
+  }
+
+  &--delivery a {
+    font-weight: 400;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-nav-list {
+    display: flex;
+    line-height: initial;
+    position: absolute;
+    top: 111px;
+  }
+
+  .product-nav-list__item {
+    min-width: 185px;
+    box-sizing: border-box;
+  }
+
+  .product-nav-list__item:last-child {
+    width: auto;
+    padding-left: 35px;
+  }
+}

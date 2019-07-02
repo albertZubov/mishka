@@ -1,0 +1,30 @@
+.user-nav {
+  line-height: 0;
+}
+
+.user-nav__wrapper {
+  display: none;
+}
+
+.user-nav__toggle {
+  font-size: 0;
+  line-height: 0;
+  border: none;
+  background: url('../img/icon-menu-open.svg') no-repeat center center;
+  width: 20px;
+  height: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .user-nav {
+    min-width: 264px;
+  }
+
+  .user-nav__wrapper {
+    display: flex;
+  }
+
+  .user-nav__toggle {
+    display: none;
+  }
+}
