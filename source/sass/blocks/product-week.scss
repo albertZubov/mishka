@@ -148,8 +148,8 @@
 
   .product-week__image-desktop {
     display: block;
-    height: 100%;
-    width: 100%;
+
+    @include img-maxsize;
   }
 
   .product-week__wrapper-characteristics {

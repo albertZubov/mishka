@@ -20,3 +20,38 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .field-data {
+    &--phone {
+      width: 100%;
+    }
+
+    &--email {
+      width: 100%;
+    }
+  }
+
+  .field-data__input {
+    padding: 0;
+    width: 100%;
+
+    &--tel {
+      background: #f1f1f1;
+      width: 100%;
+    }
+
+    &--email {
+      background: #f1f1f1;
+      width: 100%;
+    }
+  }
+
+  .field-data__label {
+    flex-direction: row;
+  }
+
+  .field-data__label-text {
+    margin-right: 25px;
+  }
+}
