@@ -1,5 +1,5 @@
 .page-footer {
-  background: #f1f1f1;
+  background: $color-grey;
   padding: 0 30px;
 }
 
@@ -8,28 +8,33 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-footer {
+    &__logo,
+    &__social,
+    &__copyright {
+      width: calc(100% / 3);
+    }
+  }
+
   .page-footer__logo {
     display: block;
   }
 
-  .page-footer__wrapper {
+  .page-footer__menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 0;
-  }
-
-  .page-footer  {
-    padding: 0 50px;
-  }
-
-  .page-footer__social {
-    margin-left: 100px;
+    padding: 30px 50px;
+    box-sizing: border-box;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    padding: 0 100px;
+    padding: 0;
+  }
+
+  .page-footer__menu {
+    padding: 50px;
   }
 }

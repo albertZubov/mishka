@@ -4,29 +4,13 @@
   flex-direction: column;
 }
 
-.production-process__wrapper {
-  display: flex;
-  align-items: center;
-  border: $border;
-  padding: 26px 33px;
-
-  & svg {
-    flex-shrink: 0;
-  }
-}
-
 .production-process__title {
-  @include title-h3;
-}
-
-.production-process__link-title {
   text-decoration: none;
   margin-left: 25px;
-}
 
-.production-process__wrapper-container {
-  padding: 33px;
-  border: $border;
+  & h3 {
+    @include title-h3;
+  }
 }
 
 .production-process__description {
@@ -44,36 +28,21 @@
   display: flex;
   justify-content: center;
 }
+
 .production-process__video {
   @include img-maxsize;
 }
 
-.production-process__video-tablet {
-  display: none;
-}
-
+.production-process__video-tablet,
 .production-process__video-desktop {
   display: none;
 }
 
 @media (min-width: $tablet-width) {
-  .production-process__wrapper-container {
-    order: 3;
-    border-top: none;
-    padding-top: 17px;
-    padding-bottom: 45px;
-  }
-
-  .production-process__wrapper {
-    order: 2;
-    border-bottom: none;
-    padding-bottom: 13px;
-  }
-
   .production-process__video-tablet {
-    display: block;
-
     @include img-maxsize;
+
+    display: block;
   }
 
   .production-process__video {
@@ -81,8 +50,10 @@
   }
 
   .production-process__title {
-    font-size: 20px;
-    line-height: 24px;
+    & h3 {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 
   .production-process__description {
@@ -101,49 +72,41 @@
   }
 
   .production-process__video-desktop {
-    display: block;
-
     @include img-maxsize;
+
+    display: block;
   }
 
   .production-process__video-tablet {
     display: none;
   }
 
-  .production-process__wrapper-general {
+  .production-process__description-creation {
     display: flex;
     flex-direction: column;
-    flex-shrink: 0;
-    width: calc(100% - 714px);
+    width: 384px;
     box-sizing: border-box;
     border: $border;
+    padding: 45px 55px 60px 80px;
   }
 
   .production-process__wrapper-video {
-    width: calc(100% - 384px);
-    flex-shrink: 0;
+    width: 716px;
   }
 
-  .production-process__wrapper {
-    flex-direction: column;
-    align-items: flex-start;
-    padding-right: 130px;
-    padding-left: 80px;
-    border: none;
-  }
-
-  .production-process__link-title {
+  .production-process__title {
     margin: 0;
     margin-top: 25px;
-  }
-
-  .production-process__wrapper-container {
-    padding-left: 80px;
-    border: none;
+    padding-right: 20px;
+    margin-bottom: 35px;
   }
 
   .production-process__btn-order {
     width: auto;
     padding: 14px 40px;
+  }
+
+  .production-process__description {
+    margin-bottom: auto;
   }
 }

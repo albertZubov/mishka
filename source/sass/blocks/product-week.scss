@@ -1,22 +1,26 @@
 .product-week {
   padding: 0 30px 35px;
-  background: url(../img/bg-zigzag-line.svg) no-repeat center bottom;
+  background: url("../img/bg-zigzag-line.svg") repeat-x center bottom;
+  box-sizing: border-box;
 }
 
 .product-week__title {
-  @include title-h2;
-  padding: 34px 0 6px;
-}
+  & h2 {
+    @include title-h2;
 
-.product-week__title-popular {
-  margin: 0;
-  font-family: $font;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 20px;
-  color: $color-green;
-  text-transform: uppercase;
-  margin-bottom: 27px;
+    padding: 34px 0 6px;
+  }
+
+  & h3 {
+    margin: 0;
+    font-family: $font;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    color: $color-green;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+  }
 }
 
 .product-week__description {
@@ -24,7 +28,8 @@
   margin-bottom: 20px;
 }
 
-.product-week__image-tablet {
+.product-week__image-tablet,
+.product-week__image-desktop {
   display: none;
 }
 
@@ -56,38 +61,39 @@
   margin-bottom: 26px;
 }
 
-.product-week__link-order {
+.product-week__order {
   @include button-link;
-  text-decoration: none;
-}
 
-.product-week__image-desktop {
-  display: none;
+  text-decoration: none;
 }
 
 @media (min-width: $tablet-width) {
   .product-week {
     padding: 0 50px 75px;
-    /* background: url(../img/bg-zigzag-fill.svg) no-repeat center top; */
     display: flex;
     flex-wrap: wrap;
   }
 
-  .product-week__title-wrapper {
+  .product-week__title {
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin-bottom: 50px;
-  }
-
-  .product-week__title-popular {
-    margin: 0;
     padding: 34px 0 6px;
-    width: 72px;
-    text-align: center;
+
+    & h2 {
+      padding: 0;
+    }
+
+    & h3 {
+      margin: 0;
+      padding: 0;
+      width: 72px;
+      text-align: center;
+    }
   }
 
-  .product-week__wrapper-characteristics {
+  .product-week__characteristics {
     width: 50%;
     padding-right: 45px;
     box-sizing: border-box;
@@ -100,9 +106,9 @@
   }
 
   .product-week__image-tablet {
-    display: block;
-
     @include img-maxsize;
+
+    display: block;
   }
 
   .product-week__image-wrapper {
@@ -110,7 +116,7 @@
     width: 50%;
   }
 
-  .product-week__price-wrapper {
+  .product-week__price-order {
     display: flex;
     flex-direction: column;
     margin-top: auto;
@@ -119,27 +125,26 @@
 
 @media (min-width: $desktop-width) {
   .product-week {
-    padding: 0 100px;
     padding-bottom: 70px;
   }
 
   .product-week__title {
-    order: 2;
-    padding: 0;
-
-    @include fontSize-desktop;
-  }
-
-  .product-week__title-popular {
-    padding: 0;
-    padding-left: 51px;
-    padding-right: 51px;
-  }
-
-  .product-week__title-wrapper {
     justify-content: flex-start;
     transform: translateY(170px);
     align-items: center;
+
+    & h2 {
+      @include fontsize-desktop;
+
+      order: 2;
+      padding: 0;
+    }
+
+    & h3 {
+      padding: 0;
+      padding-left: 51px;
+      padding-right: 51px;
+    }
   }
 
   .product-week__image-tablet {
@@ -147,12 +152,12 @@
   }
 
   .product-week__image-desktop {
-    display: block;
-
     @include img-maxsize;
+
+    display: block;
   }
 
-  .product-week__wrapper-characteristics {
+  .product-week__characteristics {
     padding-left: 177px;
     padding-top: 160px;
   }

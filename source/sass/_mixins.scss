@@ -1,10 +1,15 @@
 @mixin visually-hidden {
   position: absolute;
+
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -72,10 +77,21 @@
 }
 
 @mixin placeholder {
-  &::-webkit-input-placeholder { @content; }
-  &:-moz-placeholder           { @content; }
-  &::-moz-placeholder          { @content; }
-  &:-ms-input-placeholder      { @content; }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+
+  &:-moz-placeholder {
+    @content;
+  }
+
+  &::-moz-placeholder {
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
 }
 
 @mixin img-maxsize {
@@ -84,7 +100,7 @@
   width: 100%;
 }
 
-@mixin fontSize-desktop {
+@mixin fontsize-desktop {
   font-size: 53px;
   line-height: 57px;
 }

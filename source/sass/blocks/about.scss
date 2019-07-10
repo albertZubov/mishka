@@ -1,15 +1,14 @@
 @media (min-width: $tablet-width) {
   .about {
-    background: url(../img/bg-zigzag-line.svg) no-repeat center bottom;
-    padding-bottom: 90px;
+    background: url("../img/bg-zigzag-line.svg") repeat-x center bottom;
+    padding: 0 50px 90px 50px;
     margin-bottom: 40px;
+    box-sizing: border-box;
   }
 }
 
 @media (min-width: $desktop-width) {
   .about {
-    padding: 0 100px;
-    padding-bottom: 90px;
     margin-bottom: 70px;
   }
 }

@@ -1,8 +1,9 @@
 .page-main__title {
   @include title-h1;
+
   text-align: center;
   padding: 75px 0;
-  background: #f1f1f1;
+  background: $color-grey;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,8 +19,8 @@
 
 @media (min-width: $desktop-width) {
   .page-main__title {
-    min-height: 100px;
+    @include fontsize-desktop;
 
-    @include fontSize-desktop;
+    min-height: 100px;
   }
 }

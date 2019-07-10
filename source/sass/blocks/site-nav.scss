@@ -5,11 +5,22 @@
 @media (min-width: $tablet-width) {
   .site-nav {
     display: flex;
+    position: relative;
   }
 
   .site-nav__list {
     position: absolute;
-    top: 121px;
+    top: calc(100% + 63px);
+  }
+
+  .site-list__item {
+    min-width: 185px;
+    box-sizing: border-box;
+  }
+
+  .site-list__item:last-child {
+    width: auto;
+    padding-left: 35px;
   }
 }
 

@@ -5,6 +5,7 @@
 
 .shortly-about__title {
   @include title-h2;
+
   margin-bottom: 30px;
 }
 
@@ -18,42 +19,20 @@
   line-height: 20px;
   font-weight: 700;
   color: $title-color;
-  & svg {
-  margin-bottom: 25px;
-  }
-}
 
-.shortly-about__item svg {
-  display: block;
+  & svg {
+    margin-bottom: 25px;
+    display: block;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .shortly-about {
-    padding: 30px 50px 0;;
+    padding: 30px 50px 0;
   }
 
   .shortly-about__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .shortly-about__item {
-    width: 50%;
-    &--scandinavian-style {
-      order: 2;
-    }
-    &--addition-likes {
-      order: 4;
-    }
-    &--connected-manually {
-      order: 1;
-    }
-    &--domestic-manufacturer {
-      order: 3;
-    }
-    &--gift-container {
-      order: 5;
-    }
+    columns: auto 2;
   }
 }
 
@@ -64,6 +43,6 @@
   }
 
   .shortly-about__title {
-    @include fontSize-desktop;
+    @include fontsize-desktop;
   }
 }

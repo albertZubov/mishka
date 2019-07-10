@@ -1,21 +1,23 @@
 .field-data__label {
   @include font-label;
+
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
 
 .field-data__input {
+  @include placeholder {
+    color: $font-color_opc;
+  }
+
   font-size: 18px;
   padding: 17px 0;
   border: none;
   border-bottom: 2px solid $title-color;
-  @include placeholder {
-    color: #4444444d;
-  }
 }
 
-.field-data  {
+.field-data {
   &:last-child .field-data__label {
     margin-bottom: 0;
   }
@@ -37,12 +39,12 @@
     width: 100%;
 
     &--tel {
-      background: #f1f1f1;
+      background: $color-grey;
       width: 100%;
     }
 
     &--email {
-      background: #f1f1f1;
+      background: $color-grey;
       width: 100%;
     }
   }

@@ -1,11 +1,12 @@
 .responses {
   margin: 0;
   padding: 0 30px 45px;
-  background: url(../img/bg-zigzag-line.svg) no-repeat center bottom;
+  background: url("../img/bg-zigzag-line.svg") no-repeat center bottom;
 }
 
 .responses__title {
   @include title-h2;
+
   margin-bottom: 30px;
 }
 
@@ -14,7 +15,7 @@
   margin: 0;
 }
 
-.responses__profile-author {
+.responses__author {
   margin: 0;
   font-size: 17px;
   line-height: 20px;
@@ -22,7 +23,7 @@
   margin-bottom: 35px;
 }
 
-.responses__profile-link {
+.responses__profile {
   font-weight: 400;
   margin-top: 10px;
   display: block;
@@ -43,23 +44,25 @@
   background-color: $color-white;
   border: $border;
   cursor: pointer;
-  &--following{
+
+  &--following {
     border-right: none;
-    background: url('../img/icon-left-arrow.svg') no-repeat center;
+    background: url("../img/icon-left-arrow.svg") no-repeat center;
   }
+
   &--previous {
-    background: url('../img/icon-right-arrow.svg') no-repeat center;
+    background: url("../img/icon-right-arrow.svg") no-repeat center;
   }
 }
 
-.responses__btn-write {
+.responses__btn {
   @include button;
 }
 
 @media (min-width: $tablet-width) {
   .responses {
     padding: 0 50px 45px;
-    background: url('../img/review@1x.jpg') no-repeat center left;
+    background: url("../img/review@1x.jpg") no-repeat center left;
   }
 
   .responses__title {
@@ -71,7 +74,7 @@
     margin-top: 80px;
   }
 
-  .responses__wrapper {
+  .responses__block {
     display: flex;
     flex-wrap: wrap;
   }
@@ -81,7 +84,7 @@
     margin-bottom: 60px;
   }
 
-  .responses__profile-author {
+  .responses__author {
     order: 4;
   }
 
@@ -95,7 +98,7 @@
     border: none;
   }
 
-  .responses__btn-write {
+  .responses__btn {
     order: 2;
     display: flex;
     align-self: flex-end;
@@ -114,12 +117,12 @@
   }
 
   .responses__title {
-    @include fontSize-desktop;
+    @include fontsize-desktop;
 
     margin-top: 50px;
   }
 
-  .responses__btn-write {
+  .responses__btn {
     margin-top: 50px;
   }
 

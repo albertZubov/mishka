@@ -3,11 +3,13 @@
 }
 
 .btn-checkbox__input {
-  margin: 0;
   @include visually-hidden;
+
+  margin: 0;
 }
 
 .btn-checkbox__label {
   @include font-label;
+
   padding-left: 62px;
 }

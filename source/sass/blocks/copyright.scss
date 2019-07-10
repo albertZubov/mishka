@@ -9,3 +9,16 @@
   color: $title-color;
   padding-right: 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    padding: 0;
+  }
+}

@@ -1,13 +1,10 @@
 .basket {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  display: none;
 
   & svg {
     fill-opacity: 0.2;
-    fill: #231F20;
-    margin-right: 40px;
+    fill: #231f20;
+    margin-right: 32px;
   }
 }
 
@@ -15,4 +12,13 @@
   text-decoration: none;
   color: $font-color;
   font-weight: 700;
+}
+
+@media (min-width: $tablet-width) {
+  .basket {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
 }

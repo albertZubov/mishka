@@ -15,5 +15,6 @@
 @media (min-width: $desktop-width) {
   .catalog {
     padding: 130px 50px 100px 50px;
+    box-sizing: border-box;
   }
 }

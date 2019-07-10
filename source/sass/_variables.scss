@@ -1,8 +1,23 @@
+/* Граница */
 $border: 1px solid #ececec;
+
+/* Цвета */
 $font-color: #444444;
+$font-color_opc: #4444444d;
 $title-color: #000000;
+$color-black: #010000;
 $color-white: #ffffff;
+$color-lime: #62d1ba;
 $color-green: #63d1bb;
-$font: "Open Sans", Arial, sans-serif;
+$fill-svg-black: #231f20;
+$fill-svg-lime: #3bb09d;
+$fill-svg-lime-analog: #35a999;
+$bg-lime: #56c3b2;
+$color-grey: #f1f1f1;
+
+/* Шрифт */
+$font: "Open Sans", arial, sans-serif;
+
+/* Размеры экранов */
 $tablet-width: 768px;
 $desktop-width: 1200px;

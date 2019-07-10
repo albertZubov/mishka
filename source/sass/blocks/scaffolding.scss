@@ -5,9 +5,7 @@ body {
   font-size: 15px;
   color: $font-color;
   min-width: 320px;
-  margin: 0 auto;
-  // Временный стиль
-  max-width: 1200px;
+  margin: 0;
 }
 
 .visually-hidden {
@@ -20,5 +18,5 @@ img {
 }
 
 svg {
- fill: #63d1bb;
+  fill: $color-green;
 }
