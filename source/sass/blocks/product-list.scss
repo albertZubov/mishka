@@ -27,6 +27,7 @@
     line-height: initial;
     position: absolute;
     top: calc(100% + 20px);
+    z-index: 10;
   }
 
   .product-list__item {

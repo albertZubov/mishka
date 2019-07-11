@@ -11,16 +11,7 @@
   .site-nav__list {
     position: absolute;
     top: calc(100% + 63px);
-  }
-
-  .site-list__item {
-    min-width: 185px;
-    box-sizing: border-box;
-  }
-
-  .site-list__item:last-child {
-    width: auto;
-    padding-left: 35px;
+    z-index: 10;
   }
 }
 
