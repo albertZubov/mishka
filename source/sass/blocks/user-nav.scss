@@ -1,22 +1,16 @@
-.user-nav {
-  line-height: 0;
+@media (max-width: $mobile-width-only) {
+  .user-nav {
+    width: 100%;
+  }
 }
 
-.user-nav__toggle {
-  font-size: 0;
+.user-nav {
   line-height: 0;
-  border: none;
-  background: url("../img/icon-menu-open.svg") no-repeat center center;
-  width: 20px;
-  height: 14px;
 }
 
 @media (min-width: $tablet-width) {
   .user-nav {
     padding-left: 32px;
-  }
-
-  .user-nav__toggle {
-    display: none;
+    order: 4;
   }
 }

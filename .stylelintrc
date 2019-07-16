@@ -10,7 +10,9 @@
     "indentation": [2, {"ignore": ["inside-parens"]}],
 
     "max-empty-lines": 1,
-    "at-rule-empty-line-before": ["always", "after-same-name"],
+    "at-rule-empty-line-before": ["always", {
+      ignore: ["after-same-name"]
+    }],
     "declaration-empty-line-before": ["always", {
       "ignore": ["after-declaration", "first-nested"]
     }],

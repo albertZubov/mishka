@@ -1,5 +1,9 @@
 .btn-checkbox {
-  display: flex;
+  margin-bottom: 22px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .btn-checkbox__input {
@@ -11,5 +15,27 @@
 .btn-checkbox__label {
   @include font-label;
 
-  padding-left: 62px;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border: 2px solid $font-color;
+    box-sizing: border-box;
+    margin-right: 22px;
+  }
+}
+
+.btn-checkbox__input:checked ~ .btn-checkbox__label::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 4px;
+  width: 32px;
+  height: 22px;
+  background: url("../img/icon-tick.svg") no-repeat center;
 }

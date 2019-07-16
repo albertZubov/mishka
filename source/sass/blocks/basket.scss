@@ -1,6 +1,4 @@
 .basket {
-  display: none;
-
   & svg {
     fill-opacity: 0.2;
     fill: #231f20;
@@ -12,6 +10,27 @@
   text-decoration: none;
   color: $font-color;
   font-weight: 700;
+}
+
+@media (max-width: $mobile-width-only) {
+  .basket {
+    display: block;
+    width: 100%;
+    padding: 30px 0;
+    position: relative;
+    padding-left: calc(50% - 130px);
+
+    & svg {
+      display: inline-block;
+      margin-right: 25px;
+    }
+  }
+
+  .basket__link {
+    font-size: 17px;
+    line-height: 21px;
+    position: relative;
+  }
 }
 
 @media (min-width: $tablet-width) {

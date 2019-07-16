@@ -1,0 +1,42 @@
+
+.sale-list {
+  @include list-dumping;
+
+  display: none;
+}
+
+.sale-list__item {
+  & a {
+    text-decoration: none;
+    font-weight: 700;
+    color: $font-color;
+  }
+
+  &--delivery {
+    margin-left: auto;
+  }
+
+  &--delivery a {
+    font-weight: 400;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sale-list {
+    display: flex;
+    line-height: initial;
+    position: absolute;
+    top: calc(100% + 20px);
+    z-index: 10;
+  }
+
+  .sale-list__item {
+    min-width: 185px;
+    box-sizing: border-box;
+  }
+
+  .sale-list__item:last-child {
+    width: auto;
+    padding-left: 35px;
+  }
+}

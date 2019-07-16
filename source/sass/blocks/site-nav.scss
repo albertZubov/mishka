@@ -1,5 +1,7 @@
-.site-nav {
-  display: none;
+@media (max-width: $mobile-width-only) {
+  .site-nav {
+    width: 100%;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -8,7 +10,7 @@
     position: relative;
   }
 
-  .site-nav__list {
+  .site-nav__product {
     position: absolute;
     top: calc(100% + 63px);
     z-index: 10;
@@ -16,7 +18,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .site-nav__list {
+  .site-nav__product {
     position: static;
   }
 }
