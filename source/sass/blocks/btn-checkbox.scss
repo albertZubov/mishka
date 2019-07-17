@@ -33,9 +33,44 @@
 .btn-checkbox__input:checked ~ .btn-checkbox__label::after {
   content: "";
   position: absolute;
-  top: 9px;
-  left: 4px;
-  width: 32px;
+  top: 7px;
+  left: 10px;
+  width: 22px;
   height: 22px;
   background: url("../img/icon-tick.svg") no-repeat center;
+}
+
+@media (min-width: $tablet-width) {
+  .btn-checkbox {
+    width: 50%;
+    margin-bottom: 24px;
+
+    &:nth-child(5) {
+      margin-bottom: 0;
+    }
+  }
+
+  .btn-checkbox__label {
+    &::before {
+      width: 54px;
+      height: 52px;
+    }
+  }
+
+  .btn-checkbox__input:checked ~ .btn-checkbox__label::after {
+    top: 12px;
+    left: 12px;
+    width: 32px;
+    height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .btn-checkbox {
+    width: calc(100% / 3);
+
+    &:nth-child(4) {
+      margin-bottom: 0;
+    }
+  }
 }

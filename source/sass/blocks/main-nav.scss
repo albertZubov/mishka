@@ -65,8 +65,8 @@
     position: relative;
 
     & svg {
-      display: inline-block;
-      margin-right: 25px;
+      position: absolute;
+      left: calc(50% - 130px);
       fill-opacity: 0.2;
       fill: #231f20;
     }
@@ -79,7 +79,7 @@
     color: $font-color;
     font-size: 17px;
     padding: 0;
-    padding-left: calc(50% - 130px);
+    padding-left: calc(50% - 85px);
   }
 
   .main-nav__toggle {

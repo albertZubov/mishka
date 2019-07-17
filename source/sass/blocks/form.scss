@@ -100,11 +100,14 @@
   }
 
   .form__list {
+
     &--radio {
       padding: 0;
     }
 
     &--checkbox {
+      display: flex;
+      flex-wrap: wrap;
       padding: 0;
     }
 
