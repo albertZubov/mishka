@@ -1,9 +1,7 @@
 body {
   padding: 0;
-  font-family: $font;
-  font-weight: 400;
-  font-size: 15px;
-  color: $font-color;
+  font: 400 15px $font;
+  color: $color-gray;
   min-width: 320px;
   margin: 0;
 }

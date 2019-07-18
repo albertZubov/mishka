@@ -53,7 +53,7 @@
 .form__textarea {
   @include font-label;
   @include placeholder {
-    color: $font-color_opc;
+    color: $color-gray-opacity;
   }
 
   width: 100%;
@@ -100,7 +100,6 @@
   }
 
   .form__list {
-
     &--radio {
       padding: 0;
     }
@@ -122,19 +121,19 @@
     padding: 0 50px;
 
     &--checkbox {
-      background: $color-grey;
+      background: $color-light-gray;
       padding: 50px;
     }
 
     &--tel {
-      background: $color-grey;
+      background: $color-light-gray;
       margin: 0;
       padding-top: 60px;
       padding-bottom: 15px;
     }
 
     &--email {
-      background: $color-grey;
+      background: $color-light-gray;
       margin-bottom: 50px;
       padding-top: 15px;
       padding-bottom: 50px;

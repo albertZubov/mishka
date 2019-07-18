@@ -48,22 +48,22 @@
 }
 
 @mixin button-link {
-  color: $font-color;
+  color: $color-gray;
   text-transform: uppercase;
   font-weight: 700;
   display: block;
   text-align: center;
-  border: 2px solid $font-color;
+  border: 2px solid $color-gray;
   padding: 14px 0;
 }
 
 @mixin button {
-  color: $font-color;
+  color: $color-gray;
   text-transform: uppercase;
   font-weight: 700;
   display: block;
   text-align: center;
-  border: 2px solid $font-color;
+  border: 2px solid $color-gray;
   padding: 14px 0;
   width: 100%;
   background: transparent;

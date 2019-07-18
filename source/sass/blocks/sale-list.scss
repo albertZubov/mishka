@@ -9,15 +9,15 @@
   & a {
     text-decoration: none;
     font-weight: 700;
-    color: $font-color;
+    color: $color-gray;
   }
 
   &--delivery {
     margin-left: auto;
-  }
 
-  &--delivery a {
-    font-weight: 400;
+    & a {
+      font-weight: 400;
+    }
   }
 }
 

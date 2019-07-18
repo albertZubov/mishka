@@ -32,7 +32,7 @@
   display: none;
 }
 
-@media (max-width: $mobile-width-only) {
+@media (max-width: $tablet-width - 1) {
   .main-nav {
     flex-direction: column;
     padding: 0;
@@ -76,7 +76,7 @@
     border: none;
     background: transparent;
     font-weight: 700;
-    color: $font-color;
+    color: $color-gray;
     font-size: 17px;
     padding: 0;
     padding-left: calc(50% - 85px);
@@ -139,7 +139,7 @@
     border: none;
     cursor: pointer;
     background: none;
-    opacity: .2;
+    opacity: 0.2;
   }
 
   .main-nav__delivery {
@@ -147,7 +147,7 @@
     width: 100%;
     justify-content: flex-end;
     text-decoration: none;
-    color: $font-color;
+    color: $color-gray;
     margin-left: auto;
     position: absolute;
     top: calc(100% + 30px);

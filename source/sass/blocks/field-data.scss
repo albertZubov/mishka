@@ -8,7 +8,7 @@
 
 .field-data__input {
   @include placeholder {
-    color: $font-color_opc;
+    color: $color-gray-opacity;
   }
 
   font-size: 18px;
@@ -39,12 +39,12 @@
     width: 100%;
 
     &--tel {
-      background: $color-grey;
+      background: $color-light-gray;
       width: 100%;
     }
 
     &--email {
-      background: $color-grey;
+      background: $color-light-gray;
       width: 100%;
     }
   }

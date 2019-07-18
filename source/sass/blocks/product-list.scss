@@ -8,11 +8,11 @@
   & a {
     text-decoration: none;
     font-weight: 700;
-    color: $font-color;
+    color: $color-gray;
   }
 }
 
-@media (max-width: $mobile-width-only) {
+@media (max-width: $tablet-width - 1) {
   .product-list__item {
     padding: 30px 0;
     border-bottom: $border;

@@ -8,11 +8,11 @@
 
 .basket__link {
   text-decoration: none;
-  color: $font-color;
+  color: $color-gray;
   font-weight: 700;
 }
 
-@media (max-width: $mobile-width-only) {
+@media (max-width: $tablet-width - 1) {
   .basket {
     display: block;
     padding: 30px 0;
