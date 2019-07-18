@@ -12,7 +12,7 @@
   }
 }
 
-@media (max-width: $tablet-width - 1) {
+@media (max-width: $mobile-width-only) {
   .product-list__item {
     padding: 30px 0;
     border-bottom: $border;

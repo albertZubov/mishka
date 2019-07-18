@@ -52,6 +52,7 @@
 
 .form__textarea {
   @include font-label;
+
   @include placeholder {
     color: $color-gray-opacity;
   }

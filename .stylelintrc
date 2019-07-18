@@ -2,7 +2,7 @@
   "extends": "stylelint-config-htmlacademy",
 
   "plugins": [
-    "stylelint-order",
+    "stylelint-order"
   ],
 
   "rules": {
@@ -11,7 +11,8 @@
 
     "max-empty-lines": 1,
     "at-rule-empty-line-before": ["always", {
-      ignore: ["after-same-name"]
+      "except": ["first-nested"],
+      "ignore": ["blockless-after-same-name-blockless"]
     }],
     "declaration-empty-line-before": ["always", {
       "ignore": ["after-declaration", "first-nested"]
