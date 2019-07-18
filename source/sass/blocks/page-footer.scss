@@ -1,4 +1,40 @@
 .page-footer {
-  background: #f1f1f1;
+  background: $color-light-gray;
   padding: 0 30px;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    &__logo,
+    &__social,
+    &__copyright {
+      width: calc(100% / 3);
+    }
+  }
+
+  .page-footer__logo {
+    display: block;
+  }
+
+  .page-footer__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding: 0;
+  }
+
+  .page-footer__menu {
+    padding: 50px;
+  }
 }

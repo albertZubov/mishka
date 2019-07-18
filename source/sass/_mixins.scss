@@ -1,10 +1,15 @@
 @mixin visually-hidden {
   position: absolute;
+
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -43,22 +48,22 @@
 }
 
 @mixin button-link {
-  color: #444444;
+  color: $color-gray;
   text-transform: uppercase;
   font-weight: 700;
   display: block;
   text-align: center;
-  border: 2px solid #444444;
+  border: 2px solid $color-gray;
   padding: 14px 0;
 }
 
 @mixin button {
-  color: #444444;
+  color: $color-gray;
   text-transform: uppercase;
   font-weight: 700;
   display: block;
   text-align: center;
-  border: 2px solid #444444;
+  border: 2px solid $color-gray;
   padding: 14px 0;
   width: 100%;
   background: transparent;
@@ -72,8 +77,30 @@
 }
 
 @mixin placeholder {
-  &::-webkit-input-placeholder { @content; }
-  &:-moz-placeholder           { @content; }
-  &::-moz-placeholder          { @content; }
-  &:-ms-input-placeholder      { @content; }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+
+  &:-moz-placeholder {
+    @content;
+  }
+
+  &::-moz-placeholder {
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
+
+@mixin img-maxsize {
+  object-fit: cover;
+  height: fit-content;
+  width: 100%;
+}
+
+@mixin fontsize-desktop {
+  font-size: 53px;
+  line-height: 57px;
 }

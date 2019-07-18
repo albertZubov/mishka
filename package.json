@@ -14,7 +14,8 @@
     "gulp-sourcemaps": "2.6.x",
     "gulp-svg-sprite": "1.5.0",
     "stylelint": "^9.10.1",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "stylelint-config-htmlacademy": "0.1.x",
+    "stylelint-order": "^3.0.0"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",

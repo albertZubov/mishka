@@ -1,0 +1,42 @@
+.basket {
+  & svg {
+    fill-opacity: 0.2;
+    fill: #231f20;
+    margin-right: 32px;
+  }
+}
+
+.basket__link {
+  text-decoration: none;
+  color: $color-gray;
+  font-weight: 700;
+}
+
+@media (max-width: $mobile-width-only) {
+  .basket {
+    display: block;
+    padding: 30px 0;
+    position: relative;
+    padding-left: calc(50% - 85px);
+
+    & svg {
+      position: absolute;
+      left: calc(50% - 130px);
+    }
+  }
+
+  .basket__link {
+    font-size: 17px;
+    line-height: 21px;
+    position: relative;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .basket {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}

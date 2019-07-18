@@ -1,6 +1,26 @@
 .page-main__title {
   @include title-h1;
+
   text-align: center;
   padding: 75px 0;
-  background: #f1f1f1;
+  background: $color-light-gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    min-height: 75px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__title {
+    @include fontsize-desktop;
+
+    min-height: 100px;
+  }
 }

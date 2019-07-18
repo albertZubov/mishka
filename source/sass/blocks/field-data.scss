@@ -1,22 +1,59 @@
 .field-data__label {
   @include font-label;
+
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
 
 .field-data__input {
+  @include placeholder {
+    color: $color-gray-opacity;
+  }
+
   font-size: 18px;
   padding: 17px 0;
   border: none;
-  border-bottom: 2px solid #000000;
-  @include placeholder {
-    color: #4444444d;
+  border-bottom: 2px solid $title-color;
+}
+
+.field-data {
+  &:last-child .field-data__label {
+    margin-bottom: 0;
   }
 }
 
-.field-data  {
-  &:last-child .field-data__label {
-    margin-bottom: 0;
+@media (min-width: $tablet-width) {
+  .field-data {
+    &--phone {
+      width: 100%;
+    }
+
+    &--email {
+      width: 100%;
+    }
+  }
+
+  .field-data__input {
+    padding: 0;
+    width: 100%;
+
+    &--tel {
+      background: $color-light-gray;
+      width: 100%;
+    }
+
+    &--email {
+      background: $color-light-gray;
+      width: 100%;
+    }
+  }
+
+  .field-data__label {
+    flex-direction: row;
+  }
+
+  .field-data__label-text {
+    margin-right: 25px;
   }
 }

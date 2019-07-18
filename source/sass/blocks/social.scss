@@ -4,6 +4,7 @@
 
 .social__list {
   @include list-dumping;
+
   display: flex;
   justify-content: center;
   padding: 25px 0;
@@ -17,6 +18,18 @@
 
 .social__link {
   & svg {
-    fill: #231F20;
+    fill: $fill-svg-black;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social__list {
+    padding: 0;
   }
 }

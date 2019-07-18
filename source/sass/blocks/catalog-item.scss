@@ -3,7 +3,7 @@
   margin-bottom: 30px;
 }
 
-.catalog-item__wrapper {
+.catalog-item__product-description {
   padding: 29px 26px;
   border: $border;
 }
@@ -22,8 +22,6 @@
   margin: 0;
   font-size: 13px;
   line-height: 30px;
-  border-bottom: $border;
-  padding-bottom: 15px;
   margin-bottom: 20px;
 }
 
@@ -32,6 +30,8 @@
   margin: 0;
   justify-content: space-between;
   align-items: center;
+  padding-top: 15px;
+  border-top: $border;
 }
 
 .catalog-item__basket {
@@ -40,17 +40,105 @@
   cursor: pointer;
   padding: 0;
   display: flex;
+
   & svg {
     fill-opacity: 0.2;
-    fill: #231F20;
+    fill: $fill-svg-black;
   }
-}
-
-.catalog-item__basket svg {
-
 }
 
 .catalog-item__price {
   font-weight: 700;
   line-height: 24px;
+}
+
+.catalog-item__wrapper-image {
+  display: flex;
+  justify-content: center;
+}
+
+.catalog-item__image {
+  @include img-maxsize;
+}
+
+.catalog-item__image-tablet,
+.catalog-item__image-desktop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-item {
+    display: flex;
+    margin-bottom: 54px;
+  }
+
+  .catalog-item__image {
+    display: none;
+  }
+
+  .catalog-item__image-tablet {
+    @include img-maxsize;
+
+    display: block;
+  }
+
+  .catalog-item__wrapper-image {
+    width: 50%;
+  }
+
+  .catalog-item__product-description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catalog-item__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .catalog-item__description {
+    font-size: 15px;
+    line-height: 30px;
+    margin: 0;
+  }
+
+  .catalog-item__price-favorites {
+    margin-top: auto;
+    font-size: 17px;
+    line-height: 24px;
+    padding-top: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .catalog-item {
+    width: calc(33% - 50px * 2 / 3);
+    flex-direction: column;
+  }
+
+  .catalog-item__image-desktop {
+    @include img-maxsize;
+
+    display: block;
+  }
+
+  .catalog-item__image-tablet {
+    display: none;
+  }
+
+  .catalog-item__wrapper-image {
+    width: 100%;
+  }
+
+  .catalog-item__product-description {
+    width: 100%;
+    flex-grow: 1;
+    box-sizing: border-box;
+  }
 }

@@ -5,3 +5,16 @@
 .catalog__list {
   @include list-dumping;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    padding-top: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    padding: 130px 50px 100px 50px;
+    box-sizing: border-box;
+  }
+}
