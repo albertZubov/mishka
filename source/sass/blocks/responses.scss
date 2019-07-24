@@ -61,6 +61,11 @@
 
 @media (min-width: $tablet-width) {
   .responses {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/review@2x.jpg") no-repeat center left;
+      background-size: contain;
+    }
+
     padding: 0 50px 45px;
     background: url("../img/review@1x.jpg") no-repeat center left;
   }

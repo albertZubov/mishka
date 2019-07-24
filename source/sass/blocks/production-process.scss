@@ -2,6 +2,7 @@
   line-height: 0;
   display: flex;
   flex-direction: column;
+  border: $border;
 }
 
 .production-process__title {
@@ -13,43 +14,40 @@
   }
 }
 
+.production-process__title-blocks {
+  display: flex;
+  padding: 25px 40px 25px 33px;
+  align-items: center;
+
+  & svg {
+    flex-shrink: 0;
+  }
+}
+
 .production-process__description {
   margin: 0;
   font-size: 13px;
   line-height: 24px;
+  padding: 30px 33px 0 33px;
   margin-bottom: 27px;
 }
 
 .production-process__btn-order {
   @include button;
-}
 
-.production-process__wrapper-video {
-  display: flex;
-  justify-content: center;
+  margin: 0 33px 32px 33px;
+  box-sizing: border-box;
+  width: auto;
 }
 
 .production-process__video {
   @include img-maxsize;
 }
 
-.production-process__video-tablet,
-.production-process__video-desktop {
-  display: none;
-}
-
 @media (min-width: $tablet-width) {
-  .production-process__video-tablet {
-    @include img-maxsize;
-
-    display: block;
-  }
-
-  .production-process__video {
-    display: none;
-  }
-
   .production-process__title {
+    margin-left: 33px;
+
     & h3 {
       font-size: 20px;
       line-height: 24px;
@@ -59,39 +57,35 @@
   .production-process__description {
     font-size: 15px;
     line-height: 30px;
+    padding: 0 40px;
+    order: 2;
+  }
+
+  .production-process__title-blocks {
+    padding: 38px 40px;
+    order: 1;
   }
 
   .production-process__btn-order {
     font-size: 17px;
+    order: 3;
+    margin: 0 40px 45px 40px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .production-process {
-    flex-direction: row;
-  }
-
-  .production-process__video-desktop {
-    @include img-maxsize;
-
-    display: block;
-  }
-
-  .production-process__video-tablet {
-    display: none;
-  }
-
-  .production-process__block {
-    display: flex;
     flex-direction: column;
-    width: 384px;
+    position: relative;
+    padding: 45px 55px 60px calc(65% + 82px);
+    min-height: 457px;
     box-sizing: border-box;
-    border: $border;
-    padding: 45px 55px 60px 80px;
   }
 
-  .production-process__wrapper-video {
-    width: 716px;
+  .production-process__title-blocks {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0;
   }
 
   .production-process__title {
@@ -102,11 +96,18 @@
   }
 
   .production-process__btn-order {
-    width: auto;
-    padding: 14px 40px;
+    margin: 0;
   }
 
   .production-process__description {
     margin-bottom: auto;
+    padding: 0;
+  }
+
+  .production-process__video-wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 714px;
   }
 }
