@@ -1,7 +1,6 @@
 .responses {
   margin: 0;
   padding: 0 30px 45px;
-  background: url("../img/bg-zigzag-line.svg") no-repeat center bottom;
 }
 
 .responses__title {
@@ -61,6 +60,11 @@
 
 @media (min-width: $tablet-width) {
   .responses {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/review@2x.jpg") no-repeat center left;
+      background-size: contain;
+    }
+
     padding: 0 50px 45px;
     background: url("../img/review@1x.jpg") no-repeat center left;
   }
@@ -111,19 +115,17 @@
 
 @media (min-width: $desktop-width) {
   .responses {
-    padding: 0;
-    padding-left: 177px;
-    padding-bottom: 50px;
+    padding: 50px 0 50px 177px;
   }
 
   .responses__title {
     @include fontsize-desktop;
 
-    margin-top: 50px;
+    margin-top: 0;
   }
 
   .responses__btn {
-    margin-top: 50px;
+    margin-top: 0;
   }
 
   .responses__slider-toggles {

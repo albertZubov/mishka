@@ -1,6 +1,9 @@
+.about {
+  background: url("../img/bg-zigzag-line.svg") repeat-x center bottom;
+}
+
 @media (min-width: $tablet-width) {
   .about {
-    background: url("../img/bg-zigzag-line.svg") repeat-x center bottom;
     padding: 0 50px 90px 50px;
     margin-bottom: 40px;
     box-sizing: border-box;
