@@ -26,8 +26,12 @@ gulp.task("sprite", function() {
   return gulp.src("source/img/*.svg")
   .pipe(svgSprite({
     mode: {
-      symbol: true,
-      css: true
+      symbol: {
+        sprite: "sprite.svg",
+        bust: false,
+        dest: "",
+        example: true,
+      },
     }
   }))
   .pipe(gulp.dest("source/img"));
