@@ -88,6 +88,17 @@
     }
   }
 
+  .product-week__order {
+    &:hover {
+      background: $color-gray;
+      color: $color-white;
+    }
+
+    &:active {
+      color: $color-white-opacity;
+    }
+  }
+
   .product-week__characteristics {
     padding-right: calc(50% + 60px);
     box-sizing: border-box;

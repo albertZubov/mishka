@@ -27,15 +27,28 @@
   .field-data {
     &--phone {
       width: 100%;
+
+      & svg {
+        top: calc(50% - 13px);
+      }
     }
 
     &--email {
       width: 100%;
+
+      & svg {
+        top: calc(50% - 17px);
+      }
     }
   }
 
   .field-data__input {
     width: 100%;
+    outline: none;
+
+    &:hover {
+      border-color: $color-lime;
+    }
 
     &--tel {
       background: $color-light-gray;
@@ -50,6 +63,19 @@
 
   .field-data__label {
     flex-direction: row;
+    position: relative;
+
+    & svg {
+      position: absolute;
+      right: 0;
+      fill-opacity: 0.2;
+      fill: $fill-svg-black;
+    }
+  }
+
+  .field-data__input:hover ~ svg {
+    fill: $color-green;
+    fill-opacity: 1;
   }
 
   .field-data__label-text {

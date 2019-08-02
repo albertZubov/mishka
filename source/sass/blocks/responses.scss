@@ -100,6 +100,16 @@
 
   .responses__toggle {
     border: none;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active,
+    &:focus {
+      opacity: 0.3;
+      outline: none;
+    }
   }
 
   .responses__btn {
@@ -110,6 +120,16 @@
     width: auto;
     margin-bottom: 50px;
     margin-top: 80px;
+    outline: none;
+
+    &:hover {
+      background: $color-gray;
+      color: $color-white;
+    }
+
+    &:active {
+      color: $color-white-opacity;
+    }
   }
 }
 

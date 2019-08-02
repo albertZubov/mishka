@@ -27,6 +27,12 @@
   display: none;
 }
 
+.main-nav__search-btn {
+  & svg {
+    fill: $fill-svg-black;
+  }
+}
+
 @media (max-width: $mobile-width-only) {
   .main-nav {
     flex-direction: column;
@@ -126,7 +132,20 @@
     border: none;
     cursor: pointer;
     background: none;
-    opacity: 0.2;
+    outline: none;
+
+    & svg {
+      opacity: 0.2;
+
+      &:hover {
+        fill: $color-green;
+        opacity: 1;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+    }
   }
 
   .main-nav__delivery {
@@ -151,6 +170,14 @@
     min-width: auto;
     margin: 0 auto;
     padding: 0;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .main-nav__search {

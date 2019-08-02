@@ -59,4 +59,15 @@
   .btn-radio__contents {
     width: auto;
   }
+
+  .btn-radio__label {
+    &:hover::before {
+      border-color: $color-lime;
+    }
+
+    &:active::before {
+      border-color: $color-gray;
+      opacity: 0.3;
+    }
+  }
 }

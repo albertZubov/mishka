@@ -46,7 +46,6 @@
 
   &--home-decoration svg {
     fill: $fill-svg-lime;
-    padding-left: 30px;
     padding-right: 9px;
     flex-shrink: 0;
   }
@@ -57,8 +56,8 @@
 
   &--children-toys svg {
     fill: $fill-svg-lime-analog;
-    padding-left: 30px;
     flex-shrink: 0;
+    opacity: .2;
   }
 }
 
@@ -70,6 +69,7 @@
   line-height: 24px;
   color: $color-white;
   text-decoration: none;
+  width: 150px;
 }
 
 @media (min-width: $tablet-width) {

@@ -31,7 +31,7 @@
   text-decoration: none;
   color: inherit;
   padding-bottom: 3px;
-  border-bottom: 1px solid #62d1ba;
+  border-bottom: 1px solid $color-lime-border;
 }
 
 .contacts__block-adress {
@@ -49,9 +49,7 @@
 
 .contacts__maps-image {
   width: 100%;
-  object-fit: contain;
   margin-bottom: 37px;
-  height: fit-content;
 }
 
 .contacts__btn {
@@ -100,9 +98,29 @@
     justify-content: center;
   }
 
+  .contacts__email {
+    &:hover {
+      color: $color-lime-border;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
   .contacts__btn {
     width: auto;
     padding: 15px 40px;
+    outline: none;
+
+    &:hover {
+      background: $color-gray;
+      color: $color-white;
+    }
+
+    &:active {
+      color: $color-white-opacity;
+    }
   }
 }
 

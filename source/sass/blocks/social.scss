@@ -26,6 +26,18 @@
   .social {
     border: none;
   }
+
+  .social__link {
+    & svg {
+      &:hover {
+        fill: $color-lime-border;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {

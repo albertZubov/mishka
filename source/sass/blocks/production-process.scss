@@ -45,6 +45,23 @@
 }
 
 @media (min-width: $tablet-width) {
+  .production-process {
+    &:hover::before {
+      content: "";
+      position: absolute;
+      top: -1px;
+      right: 0;
+      width: 383px;
+      height: 100%;
+      box-shadow: 6px 0 10px #0000001a;
+      z-index: -1;
+    }
+
+    &:active::before {
+      box-shadow: 3px 0 5px #0000001a;
+    }
+  }
+
   .production-process__title {
     margin-left: 33px;
 
@@ -70,6 +87,16 @@
     font-size: 17px;
     order: 3;
     margin: 0 40px 45px 40px;
+    outline: none;
+
+    &:hover {
+      background: $color-gray;
+      color: $color-white;
+    }
+
+    &:active {
+      color: $color-white-opacity;
+    }
   }
 }
 

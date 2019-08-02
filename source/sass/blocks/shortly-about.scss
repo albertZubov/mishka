@@ -23,6 +23,10 @@
   & svg {
     margin-bottom: 25px;
     display: block;
+
+    & path {
+      fill: $color-lime;
+    }
   }
 }
 

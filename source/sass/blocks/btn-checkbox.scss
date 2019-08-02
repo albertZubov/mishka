@@ -18,6 +18,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -51,6 +52,15 @@
   }
 
   .btn-checkbox__label {
+    &:hover::before {
+      border-color: $color-lime;
+    }
+
+    &:active::before {
+      border-color: $color-gray;
+      opacity: 0.3;
+    }
+
     &::before {
       width: 54px;
       height: 52px;
