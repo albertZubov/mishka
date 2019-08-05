@@ -82,7 +82,17 @@ gulp.task("html", function() {
 gulp.task("copy", function() {
   return gulp.src([
     "source/fonts/**/*.{woff, woff2}",
-    "source/img/**",
+    "source/img/**.{png,jpg,webp}",
+    "source/img/logo-mobile.svg",
+    "source/img/logo-tablet.svg",
+    "source/img/logo-desktop.svg",
+    "source/img/bg-zigzag-fill.svg",
+    "source/img/bg-zigzag-line.svg",
+    "source/img/icon-right-arrow.svg",
+    "source/img/icon-left-arrow.svg",
+    "source/img/icon-menu-open.svg",
+    "source/img/icon-menu-close.svg",
+    "source/img/icon-tick.svg",
     "source/js/**"
     ], {
       base: "source"
