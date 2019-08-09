@@ -98,6 +98,11 @@
     margin: 0;
     margin-bottom: 50px;
     width: calc(100% - 165px);
+    outline: none;
+
+    &:hover {
+      border-color: $color-lime;
+    }
   }
 
   .form__list {
@@ -163,6 +168,16 @@
     width: auto;
     padding: 14px 30px;
     font-size: 17px;
+    outline: none;
+
+    &:hover {
+      background: $color-gray;
+      color: $color-white;
+    }
+
+    &:active {
+      color: $color-white-opacity;
+    }
   }
 
   .form__footnote-surely {

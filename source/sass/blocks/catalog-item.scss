@@ -75,6 +75,39 @@
     width: 50%;
     display: flex;
     flex-direction: column;
+
+    &:hover {
+      box-shadow: 0 6px 10px $color-shadow-black;
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px $color-shadow-black;
+    }
+  }
+
+  .catalog-item__link-title {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .catalog-item__basket {
+    outline: none;
+
+    & svg {
+      &:hover {
+        fill: $color-green;
+        fill-opacity: 1;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+    }
   }
 
   .catalog-item__title {

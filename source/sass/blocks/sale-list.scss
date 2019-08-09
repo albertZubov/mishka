@@ -33,6 +33,14 @@
   .sale-list__item {
     min-width: 185px;
     box-sizing: border-box;
+
+    & a:hover {
+      opacity: 0.6;
+    }
+
+    & a:active {
+      opacity: 0.3;
+    }
   }
 
   .sale-list__item:last-child {

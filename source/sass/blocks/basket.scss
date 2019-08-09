@@ -1,7 +1,7 @@
 .basket {
   & svg {
+    fill: $fill-svg-black;
     fill-opacity: 0.2;
-    fill: #231f20;
     margin-right: 32px;
   }
 }
@@ -38,5 +38,27 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    cursor: pointer;
+
+    & svg {
+      &:hover {
+        fill: $color-green;
+        fill-opacity: 1;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  .basket__link {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
