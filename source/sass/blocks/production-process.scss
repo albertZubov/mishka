@@ -40,6 +40,24 @@
   width: auto;
 }
 
+.production-process__btn-play {
+  border: none;
+  background: none;
+  padding: 0;
+  position: absolute;
+  left: calc(50% - 50px);
+  top: calc(50% - 38px);
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+.production-process__video-wrap {
+  position: relative;
+}
+
 .production-process__video {
   @include img-maxsize;
 }
@@ -96,6 +114,23 @@
 
     &:active {
       color: $color-white-opacity;
+    }
+  }
+
+  .production-process__btn-play {
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.2);
+      transition: transform 0.3s;
+    }
+
+    &:active {
+      transform: scale(0.8);
+      opacity: 0.3;
+      transition: transform 0.3s;
     }
   }
 }
