@@ -8,10 +8,13 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+<!-- Хорошо бы заменить инлайн на класс -->
   <div style="display: none;">
     <include src="build/img/sprite.svg"></include>
   </div>
   <header class="page-header container">
+<!--  nojs должен быть на верхнем уровне, те на body  -->
+<!--  так как не только твоему меню может понадобится это функционал, а убрать будет достаточно в одном месте -->
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <a class="main-nav__logo">
         <picture>
@@ -267,6 +270,7 @@
       <section class="modal-basket">
         <h3 class="modal-basket__title">добавить в корзину</h3>
         <form action="#0" method="get" class="modal-basket__form">
+<!-- Что инпут и спан делают внутри списка? -->
           <ul class="modal-basket__list"><span class="modal-basket__dimension">Выберите размер:</span>
             <input class="modal-basket__input" type="radio" name="size" id="size_s" value="size_s" checked>
             <input class="modal-basket__input" type="radio" name="size" id="size_m" value="size_m">
@@ -289,3 +293,4 @@
       <script type="text/javascript" src="js/popup.js"></script>
     </body>
     </html>
+<!-- Что с выравниванем? -->

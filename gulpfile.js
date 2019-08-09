@@ -87,6 +87,9 @@ gulp.task("copy", function() {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**.{png,jpg,webp}",
+
+    // Этот список изображений полный провал
+    // Gulp это сборщик, ты в нем настраиваешь универсальный конфиг. Он не должен ничего знать о названии твоих файлов
     "source/img/logo-mobile.svg",
     "source/img/logo-tablet.svg",
     "source/img/logo-desktop.svg",

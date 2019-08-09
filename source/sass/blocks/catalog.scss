@@ -2,6 +2,7 @@
   padding: 30px 30px 58px;
 }
 
+// не работает переполнение
 .catalog__list {
   @include list-dumping;
 }

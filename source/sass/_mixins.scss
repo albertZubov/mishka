@@ -58,6 +58,7 @@
 }
 
 @mixin button {
+  // Кнопка должна быть отедльнмы БЭМ блоком, а не миксином
   color: $color-gray;
   text-transform: uppercase;
   font-weight: 700;

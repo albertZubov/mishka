@@ -46,6 +46,7 @@
     width: 50%;
     margin-bottom: 24px;
 
+    // Провал, элементов не всегда будет 6
     &:nth-child(5) {
       margin-bottom: 0;
     }

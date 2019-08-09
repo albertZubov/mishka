@@ -7,6 +7,8 @@
   background: $color-white;
   transform: scale(0);
 
+  // ужасная анимация, сделай помягуче
+  // очень понравилась анимация в каталоге на плеере
   &--show {
     position: fixed;
     opacity: 0.9;

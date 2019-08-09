@@ -1,4 +1,5 @@
 var link = document.querySelector(".product-week__order");
+// Если у тебя множество элементов в переменной, то и называй во множественном числе
 var linkCatalog = document.querySelectorAll(".catalog-item__basket");
 var linkBasket = document.querySelector(".production-process__btn-order");
 var popup = document.querySelector(".modal-basket");

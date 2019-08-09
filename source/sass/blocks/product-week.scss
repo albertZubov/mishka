@@ -1,5 +1,7 @@
 .product-week {
   padding: 0 30px 35px;
+  // zigzag нужно вынести в миксин
+  // и он должен тянуться на всю ширину
   background: url("../img/bg-zigzag-line.svg") repeat-x center bottom;
   box-sizing: border-box;
 }

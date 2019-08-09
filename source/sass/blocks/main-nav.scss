@@ -34,10 +34,12 @@
 }
 
 @media (max-width: $mobile-width-only) {
+  // С открытой менюхой появляется скролл
   .main-nav {
     flex-direction: column;
     padding: 0;
 
+    // У тебя в амперсанде уже есть .main-nav, можно писать &--opened &__toggle
     &--opened .main-nav__toggle {
       background: url("../img/icon-menu-close.svg") no-repeat center center;
       width: 20px;
