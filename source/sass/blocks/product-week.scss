@@ -1,7 +1,9 @@
 .product-week {
+  @include img-zigzag-line;
+
   padding: 0 30px 35px;
-  background: url("../img/bg-zigzag-line.svg") repeat-x center bottom;
   box-sizing: border-box;
+  position: relative;
 }
 
 .product-week__title {
@@ -57,9 +59,9 @@
 }
 
 .product-week__order {
-  @include button-link;
-
   text-decoration: none;
+  width: 100%;
+  padding: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -85,17 +87,6 @@
       padding: 0;
       width: 72px;
       text-align: center;
-    }
-  }
-
-  .product-week__order {
-    &:hover {
-      background: $color-gray;
-      color: $color-white;
-    }
-
-    &:active {
-      color: $color-white-opacity;
     }
   }
 
@@ -132,6 +123,11 @@
   .product-week {
     padding-bottom: 70px;
     position: relative;
+
+    &::before {
+      width: calc(100% - 100px);
+      left: 50px;
+    }
   }
 
   .product-week__title {

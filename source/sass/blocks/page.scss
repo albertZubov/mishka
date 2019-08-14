@@ -1,0 +1,17 @@
+.page {
+  &--nojs {
+    & .product-list,
+    & .main-nav__search,
+    & .user-nav {
+      display: block;
+    }
+
+    & .product-list__item:first-child {
+      border-top: $border;
+    }
+
+    & .main-nav__toggle {
+      display: none;
+    }
+  }
+}

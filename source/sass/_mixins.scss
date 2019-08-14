@@ -47,29 +47,6 @@
   list-style: none;
 }
 
-@mixin button-link {
-  color: $color-gray;
-  text-transform: uppercase;
-  font-weight: 700;
-  display: block;
-  text-align: center;
-  border: 2px solid $color-gray;
-  padding: 14px 0;
-}
-
-@mixin button {
-  color: $color-gray;
-  text-transform: uppercase;
-  font-weight: 700;
-  display: block;
-  text-align: center;
-  border: 2px solid $color-gray;
-  padding: 14px 0;
-  width: 100%;
-  background: transparent;
-  cursor: pointer;
-}
-
 @mixin font-label {
   font-size: 17px;
   line-height: 18px;
@@ -103,4 +80,28 @@
 @mixin fontsize-desktop {
   font-size: 53px;
   line-height: 57px;
+}
+
+@mixin img-zigzag-line {
+  &::before {
+    content: "";
+    width: 100%;
+    height: 25px;
+    position: absolute;
+    background: url("../img/imgInline/bg-zigzag-line.svg") repeat-x center bottom;
+    bottom: 0;
+    left: 0;
+    background-size: 110%;
+  }
+}
+
+@mixin img-zigzag-fill {
+  &::before {
+    content: "";
+    width: 100%;
+    height: 34px;
+    position: absolute;
+    bottom: -1px;
+    background: url("../img/imgInline/bg-zigzag-fill.svg") repeat-x center;
+  }
 }

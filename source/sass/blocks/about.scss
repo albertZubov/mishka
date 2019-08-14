@@ -1,5 +1,7 @@
 .about {
-  background: url("../img/bg-zigzag-line.svg") repeat-x center bottom;
+  @include img-zigzag-line;
+
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {
@@ -13,5 +15,10 @@
 @media (min-width: $desktop-width) {
   .about {
     margin-bottom: 70px;
+
+    &::before {
+      width: calc(100% - 100px);
+      left: 50px;
+    }
   }
 }

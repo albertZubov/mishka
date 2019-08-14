@@ -33,11 +33,8 @@
 }
 
 .production-process__btn-order {
-  @include button;
-
   margin: 0 33px 32px 33px;
-  box-sizing: border-box;
-  width: auto;
+  padding: 0;
 }
 
 .production-process__btn-play {
@@ -106,15 +103,6 @@
     order: 3;
     margin: 0 40px 45px 40px;
     outline: none;
-
-    &:hover {
-      background: $color-gray;
-      color: $color-white;
-    }
-
-    &:active {
-      color: $color-white-opacity;
-    }
   }
 
   .production-process__btn-play {
