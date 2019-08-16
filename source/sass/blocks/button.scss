@@ -1,0 +1,22 @@
+.button {
+  color: $color-gray;
+  text-transform: uppercase;
+  font-weight: 700;
+  min-height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid $color-gray;
+  box-sizing: border-box;
+  background: transparent;
+  cursor: pointer;
+
+  &:hover {
+    background: $color-gray;
+    color: $color-white;
+  }
+
+  &:active {
+    color: $color-white-opacity;
+  }
+}
