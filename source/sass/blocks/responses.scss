@@ -39,25 +39,34 @@
   font-size: 0;
   line-height: 0;
   width: 50%;
-  // Про эту ошибку с падингами я тебе уже говорил
-  // Ты задаешь размер элементу падингами
-  padding: 26px 0;
+  height: 52px;
   background-color: $color-white;
   border: $border;
   cursor: pointer;
+  padding: 0;
 
   &--following {
-    border-right: none;
-    background: url("../img/icon-left-arrow.svg") no-repeat center;
+    background: url("../img/imgInline/icon-left-arrow.svg") no-repeat center;
   }
 
   &--previous {
-    background: url("../img/icon-right-arrow.svg") no-repeat center;
+    background: url("../img/imgInline/icon-right-arrow.svg") no-repeat center;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
+    outline: none;
   }
 }
 
 .responses__btn {
-  @include button;
+  width: 100%;
+  padding: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -67,7 +76,7 @@
       background-size: contain;
     }
 
-    padding: 0 50px 45px;
+    padding: 80px 50px 45px;
     background: url("../img/review@1x.jpg") no-repeat center left;
   }
 
@@ -76,8 +85,6 @@
     line-height: 50px;
     margin: 0;
     margin-right: auto;
-    margin-bottom: 50px;
-    margin-top: 80px;
   }
 
   .responses__block {
@@ -88,50 +95,29 @@
   .responses__description {
     order: 3;
     margin-bottom: 60px;
+    margin-top: 50px;
   }
 
   .responses__author {
     order: 4;
+    margin-bottom: 0;
   }
 
   .responses__slider-toggles {
     order: 5;
     margin-left: auto;
-    width: 26%;
+    width: 176px;
+    margin-bottom: 0;
   }
 
   .responses__toggle {
     border: none;
-
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:active,
-    &:focus {
-      opacity: 0.3;
-      outline: none;
-    }
   }
 
   .responses__btn {
     order: 2;
-    display: flex;
-    align-self: flex-end;
-    padding: 16px 40px;
-    width: auto;
-    margin-bottom: 50px;
-    margin-top: 80px;
+    width: 175px;
     outline: none;
-
-    &:hover {
-      background: $color-gray;
-      color: $color-white;
-    }
-
-    &:active {
-      color: $color-white-opacity;
-    }
   }
 }
 
@@ -144,17 +130,5 @@
     @include fontsize-desktop;
 
     margin-top: 0;
-  }
-
-  .responses__btn {
-    margin-top: 0;
-  }
-
-  .responses__slider-toggles {
-    width: 21%;
-  }
-
-  .responses__toggle {
-    padding: 25px 0;
   }
 }

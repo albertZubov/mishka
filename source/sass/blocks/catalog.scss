@@ -18,4 +18,9 @@
     padding: 130px 50px 100px 50px;
     box-sizing: border-box;
   }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

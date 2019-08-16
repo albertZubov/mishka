@@ -17,9 +17,9 @@
   font-size: 0;
   line-height: 0;
   border: none;
-  background: url("../img/icon-menu-open.svg") no-repeat center center;
+  background: url("../img/imgInline/icon-menu-close.svg") no-repeat center center;
   width: 20px;
-  height: 14px;
+  height: 20px;
 }
 
 .main-nav__search-input,
@@ -34,29 +34,23 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  // С открытой менюхой появляется скролл
   .main-nav {
     flex-direction: column;
     padding: 0;
 
-    // У тебя в амперсанде уже есть .main-nav, можно писать &--opened &__toggle
-    &--opened .main-nav__toggle {
-      background: url("../img/icon-menu-close.svg") no-repeat center center;
+    &--closed &__toggle {
+      background: url("../img/imgInline/icon-menu-open.svg") no-repeat center center;
       width: 20px;
-      height: 20px;
+      height: 14px;
     }
 
-    &--closed .main-nav__logo {
+    &--closed &__logo {
       border-bottom: none;
     }
 
     &--closed .product-list,
     &--closed .main-nav__search,
     &--closed .user-nav {
-      display: none;
-    }
-
-    &--no-js .main-nav__toggle {
       display: none;
     }
   }

@@ -2,17 +2,21 @@
   padding: 35px 30px 45px;
   width: 320px;
   box-sizing: border-box;
-  position: fixed;
-  z-index: 10;
+  position: absolute;
   top: 20%;
-  left: calc(50% - 160px);
+  pointer-events: none;
+  opacity: 0;
   background-color: $color-white;
   box-shadow: 0 5px 10px $color-shadow-gray;
-  display: none;
   border: $border;
 
   &--show {
-    display: block;
+    position: fixed;
+    z-index: 10;
+    left: calc(50% - 160px);
+    opacity: 1;
+    pointer-events: initial;
+    transition: opacity 0.6s;
   }
 }
 
@@ -41,6 +45,7 @@
 .modal-basket__dimension {
   width: 100%;
   text-align: center;
+  margin: 0;
   margin-bottom: 25px;
 }
 
@@ -57,6 +62,7 @@
     padding: 18px 0;
     display: block;
     width: 100%;
+    box-sizing: border-box;
 
     &:hover {
       border-color: $color-border-darkgray;
@@ -85,9 +91,9 @@
 }
 
 /* stylelint-disable selector-max-id */
-#size_s:checked ~ .modal-basket__item label[for="size_s"],
-#size_m:checked ~ .modal-basket__item label[for="size_m"],
-#size_l:checked ~ .modal-basket__item label[for="size_l"] {
+#size_s:checked ~ .modal-basket__list label[for="size_s"],
+#size_m:checked ~ .modal-basket__list label[for="size_m"],
+#size_l:checked ~ .modal-basket__list label[for="size_l"] {
   border-color: $color-lime;
 }
 /* stylelint-enable */

@@ -1,6 +1,5 @@
 var link = document.querySelector(".product-week__order");
-// Если у тебя множество элементов в переменной, то и называй во множественном числе
-var linkCatalog = document.querySelectorAll(".catalog-item__basket");
+var linksCatalog = document.querySelectorAll(".catalog-item__basket");
 var linkBasket = document.querySelector(".production-process__btn-order");
 var popup = document.querySelector(".modal-basket");
 var close = popup.querySelector(".modal-basket__btn");
@@ -15,8 +14,8 @@ var event = function(evt){
 link && link.addEventListener("click", event);
 linkBasket && linkBasket.addEventListener("click", event);
 
-for (var i = 0; i < linkCatalog.length; i++) {
-  linkCatalog[i].addEventListener("click", event);
+for (var i = 0; i < linksCatalog.length; i++) {
+  linksCatalog[i].addEventListener("click", event);
 };
 
 close.addEventListener("click", function(evt) {

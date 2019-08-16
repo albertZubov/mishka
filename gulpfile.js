@@ -86,20 +86,8 @@ gulp.task("html", function() {
 gulp.task("copy", function() {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**.{png,jpg,webp}",
-
-    // Этот список изображений полный провал
-    // Gulp это сборщик, ты в нем настраиваешь универсальный конфиг. Он не должен ничего знать о названии твоих файлов
-    "source/img/logo-mobile.svg",
-    "source/img/logo-tablet.svg",
-    "source/img/logo-desktop.svg",
-    "source/img/bg-zigzag-fill.svg",
-    "source/img/bg-zigzag-line.svg",
-    "source/img/icon-right-arrow.svg",
-    "source/img/icon-left-arrow.svg",
-    "source/img/icon-menu-open.svg",
-    "source/img/icon-menu-close.svg",
-    "source/img/icon-tick.svg"
+    "source/img/imgInline/*",
+    "source/img/**.{png,jpg,webp}"
     ], {
       base: "source"
     })

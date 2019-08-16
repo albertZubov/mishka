@@ -77,7 +77,8 @@
 }
 
 .form__btn-sending {
-  @include button;
+  width: 100%;
+  padding: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -165,19 +166,9 @@
   }
 
   .form__btn-sending {
-    width: auto;
-    padding: 14px 30px;
+    width: 230px;
     font-size: 17px;
     outline: none;
-
-    &:hover {
-      background: $color-gray;
-      color: $color-white;
-    }
-
-    &:active {
-      color: $color-white-opacity;
-    }
   }
 
   .form__footnote-surely {

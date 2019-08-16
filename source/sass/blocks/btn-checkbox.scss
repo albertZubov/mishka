@@ -20,6 +20,15 @@
   align-items: center;
   cursor: pointer;
 
+  &:hover::before {
+    border-color: $color-lime;
+  }
+
+  &:active::before {
+    border-color: $color-gray;
+    opacity: 0.3;
+  }
+
   &::before {
     content: "";
     width: 40px;
@@ -38,7 +47,7 @@
   left: 10px;
   width: 22px;
   height: 22px;
-  background: url("../img/icon-tick.svg") no-repeat center;
+  background: url("../img/imgInline/icon-tick.svg") no-repeat center;
 }
 
 @media (min-width: $tablet-width) {
@@ -46,22 +55,12 @@
     width: 50%;
     margin-bottom: 24px;
 
-    // Провал, элементов не всегда будет 6
-    &:nth-child(5) {
+    &:nth-child(odd) {
       margin-bottom: 0;
     }
   }
 
   .btn-checkbox__label {
-    &:hover::before {
-      border-color: $color-lime;
-    }
-
-    &:active::before {
-      border-color: $color-gray;
-      opacity: 0.3;
-    }
-
     &::before {
       width: 54px;
       height: 52px;

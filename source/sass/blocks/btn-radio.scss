@@ -1,9 +1,9 @@
 .btn-radio {
   display: flex;
+  margin-bottom: 10px;
 
-  &:first-child {
-    margin-bottom: 10px;
-  //  А если 3 и больше элемента будет?
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -29,6 +29,15 @@
     border-radius: 50%;
     box-sizing: border-box;
   }
+
+  &:hover::before {
+    border-color: $color-lime;
+  }
+
+  &:active::before {
+    border-color: $color-gray;
+    opacity: 0.3;
+  }
 }
 
 .btn-radio__input:checked ~ .btn-radio__label::after {
@@ -51,24 +60,10 @@
 @media (min-width: $tablet-width) {
   .btn-radio {
     width: auto;
-
-    &:first-child {
-      margin-bottom: 24px;
-    }
+    margin-bottom: 24px;
   }
 
   .btn-radio__contents {
     width: auto;
-  }
-
-  .btn-radio__label {
-    &:hover::before {
-      border-color: $color-lime;
-    }
-
-    &:active::before {
-      border-color: $color-gray;
-      opacity: 0.3;
-    }
   }
 }
