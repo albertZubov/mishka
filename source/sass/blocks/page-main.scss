@@ -2,7 +2,8 @@
   @include title-h1;
 
   text-align: center;
-  padding: 75px 0;
+  padding-top: 71px;
+  padding-bottom: 75px;
   background: $color-light-gray;
   display: flex;
   justify-content: center;
@@ -17,8 +18,8 @@
     font-size: 43px;
     line-height: 50px;
     position: relative;
-    padding-top: 55px;
-    padding-bottom: 75px;
+    padding-top: 83px;
+    padding-bottom: 70px;
   }
 }
 
@@ -26,6 +27,13 @@
   .page-main__title {
     @include fontsize-desktop;
 
+    padding-top: 71px;
+    padding-bottom: 85px;
     min-height: 100px;
+
+    &::before {
+      height: 37px;
+      background-size: 65%;
+    }
   }
 }

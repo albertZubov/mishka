@@ -20,13 +20,19 @@ $color-shadow-black: #0000001a;
 $color-shadow-gray: #00010140;
 $color-border-gray: #ececec;
 $color-border-darkgray: #c7c7c7;
+$color-overlay: rgba(#000, 0.6);
 
 /* Шрифт */
 $font: "Open Sans", arial, sans-serif;
 
 /* Размеры экранов */
 $tablet-width: 768px;
-$desktop-width: 1200px;
+$desktop-width: 1150px;
 $mobile-width-only: $tablet-width - 1;
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
+
+/* Анимация */
+$speed: 0.6s;
+$delay: ($speed * 0.5);
+$easing: cubic-bezier(0.55, 0, 0.1, 1);

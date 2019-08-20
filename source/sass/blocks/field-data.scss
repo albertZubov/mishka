@@ -4,7 +4,7 @@
 
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   position: relative;
 
   & svg {
@@ -28,6 +28,15 @@
   &:hover {
     border-color: $color-lime;
   }
+
+  &--tel {
+    padding: 18px 0;
+  }
+
+  &--email {
+    padding-top: 24px;
+    padding-bottom: 13px;
+  }
 }
 
 .field-data {
@@ -40,6 +49,7 @@
 
     & svg {
       top: calc(50% - 13px);
+      right: 9px;
     }
   }
 
@@ -47,7 +57,8 @@
     width: 100%;
 
     & svg {
-      top: calc(50% - 17px);
+      top: calc(50% - 11px);
+      right: 4px;
     }
   }
 }
@@ -57,10 +68,27 @@
   fill-opacity: 1;
 }
 
+.field-data__label-text {
+  padding-top: 5px;
+}
+
 @media (min-width: $tablet-width) {
+  .field-data {
+    &--phone svg {
+      top: calc(50% - 15px);
+      right: 26px;
+    }
+
+    &--email svg {
+      top: calc(50% - 15px);
+      right: 22px;
+    }
+  }
+
   .field-data__input {
     width: 100%;
     outline: none;
+    padding: 14px 0 14px 16px;
 
     &--tel {
       background: $color-light-gray;
@@ -75,10 +103,27 @@
 
   .field-data__label {
     flex-direction: row;
+    margin-bottom: 26px;
   }
 
   .field-data__label-text {
-    margin-right: 25px;
+    margin-right: 30px;
     padding: 14px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-data {
+    &--phone svg {
+      right: 7px;
+    }
+
+    &--email svg {
+      right: 3px;
+    }
+  }
+
+  .field-data__label {
+    margin-bottom: 25px;
   }
 }

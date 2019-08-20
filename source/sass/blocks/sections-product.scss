@@ -17,7 +17,7 @@
 
   color: $color-black;
   font-size: 27px;
-  padding: 22px 0 70px;
+  padding: 21px 0 72px;
   min-height: 190px;
   display: flex;
   flex-direction: column;
@@ -58,7 +58,7 @@
 
   &--home-decoration {
     background: $color-green;
-    padding: 0 36px 0 30px;
+    padding: 0 36px 0 28px;
 
     & svg {
       fill: $fill-svg-lime;
@@ -81,32 +81,45 @@
   }
 
   .sections-product__title {
-    font-size: 43px;
-    line-height: 50px;
+    @include font-title-tablet;
+
     min-height: 300px;
-    padding: 100px 0 140px;
+    padding: 154px 0 168px;
+    display: block;
+    text-align: center;
+  }
+
+  .sections-product__title-center {
+    display: inline-block;
   }
 
   .sections-product__main {
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/hero-tablet@2x.jpg") no-repeat center -18px;
+      background: url("../img/hero-tablet@2x.jpg") no-repeat center 0;
       background-size: 1150px auto;
     }
 
-    background: url("../img/hero-tablet@1x.jpg") no-repeat center -18px;
+    background: url("../img/hero-tablet@1x.jpg") no-repeat center 0;
     padding: 0 50px;
     box-sizing: border-box;
   }
 
   .sections-product__list {
     display: flex;
-    padding-bottom: 15px;
   }
 
   .sections-product__link {
     min-height: 120px;
     cursor: pointer;
     margin-top: 5px;
+
+    &--home-decoration {
+      padding: 0 36px;
+    }
+
+    &--children-toys {
+      padding: 0 34px 0 36px;
+    }
 
     &:hover {
       min-height: 125px;
@@ -133,20 +146,25 @@
 @media (min-width: $desktop-width) {
   .sections-product {
     margin-bottom: 70px;
+
+    &::before {
+      background-size: 65%;
+      height: 37px;
+    }
   }
 
   .sections-product__main {
     background-size: cover;
+    background-position-y: -5px;
   }
 
   .sections-product__title {
     @include fontsize-desktop;
 
     display: block;
-    width: 55%;
+    width: 60%;
     text-align: center;
     margin: 0 auto;
-    padding: 143px 0 183px;
   }
 
   .sections-product__title-center {

@@ -1,5 +1,5 @@
 .btn-checkbox {
-  margin-bottom: 22px;
+  margin-bottom: 21px;
 
   &:last-child {
     margin-bottom: 0;
@@ -47,7 +47,7 @@
   left: 10px;
   width: 22px;
   height: 22px;
-  background: url("../img/imgInline/icon-tick.svg") no-repeat center;
+  background: url("../img/svg_inline/icon-tick.svg") no-repeat center;
 }
 
 @media (min-width: $tablet-width) {
@@ -58,17 +58,23 @@
     &:nth-child(odd) {
       margin-bottom: 0;
     }
+
+    &:nth-child(even) {
+      padding-left: 10px;
+      box-sizing: border-box;
+    }
   }
 
   .btn-checkbox__label {
     &::before {
       width: 54px;
       height: 52px;
+      margin-right: 28px;
     }
   }
 
   .btn-checkbox__input:checked ~ .btn-checkbox__label::after {
-    top: 12px;
+    top: 15px;
     left: 12px;
     width: 32px;
     height: 24px;
@@ -81,6 +87,10 @@
 
     &:nth-child(4) {
       margin-bottom: 0;
+    }
+
+    &:nth-child(even) {
+      padding: 0;
     }
   }
 }

@@ -66,7 +66,7 @@
         <p class="form__preface">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <fieldset class="form__fieldset">
           <div class="form__main-contents">
-            <legend class="form__title"><span class="form__title-legend">тип</span></legend>
+            <h3 class="form__title"><span class="form__title-text">тип</span></h3>
             <ul class="form__list form__list--radio">
               <li class="btn-radio">
                 <input class="btn-radio__input" type="radio" name="type-product" value="interior-accessories" id="btn-radio-on" checked="">
@@ -85,7 +85,7 @@
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--checkbox">
           <div class="form__main-contents">
-            <legend class="form__title"><span class="form__title-legend">цвет</span></legend>
+            <h3 class="form__title"><span class="form__title-text">цвет</span></h3>
             <ul class="form__list form__list--checkbox">
               <li class="btn-checkbox">
                 <input class="btn-checkbox__input" type="checkbox" id="color-white" name="color" value="white" checked="">
@@ -116,7 +116,7 @@
         </fieldset>
         <fieldset class="form__fieldset">
           <div class="form__main-contents">
-            <legend class="form__title"><span class="form__title-legend">фио</span></legend>
+            <h3 class="form__title"><span class="form__title-text">фио</span></h3>
             <ul class="form__list form__list--fio">
               <li class="field-data">
                 <label class="field-data__label"><span class="field-data__label-text">Имя:</span><input class="field-data__input" type="text" placeholder="Введите ваше имя&#9913;" name="name"></label>
@@ -132,7 +132,7 @@
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--tel">
           <div class="form__main-contents">
-            <legend class="form__title"><span class="form__title-legend">тел</span></legend>
+            <h3 class="form__title"><span class="form__title-text">тел</span></h3>
             <div class="field-data field-data--phone">
               <label class="field-data__label"><input class="field-data__input field-data__input--tel" type="tel" name="phone" placeholder="+7 XXX XXX XX XX&#9913;">
                 <svg width="24.829" height="24.333">
@@ -144,9 +144,9 @@
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--email">
           <div class="form__main-contents">
-            <legend class="form__title"><span class="form__title-legend form__title-legend--email">e-mail</span></legend>
+            <h3 class="form__title"><span class="form__title-text form__title-text--email">e-mail</span></h3>
             <div class="field-data field-data--email">
-              <label class="field-data__label"><input class="field-data__input  field-data__input--email" type="email" name="email" placeholder="Ваш email&#9913;">
+              <label class="field-data__label"><input class="field-data__input  field-data__input--email" type="email" name="email" placeholder="Ваш Email&#9913;">
                 <svg width="32" height="32">
                   <use xlink:href="#icon-mail"></use>
                 </svg>
@@ -156,7 +156,7 @@
         </fieldset>
         <fieldset class="form__fieldset">
           <div class="form__main-contents form__main-contents--addition">
-            <legend class="form__title"><span class="form__title-legend">доп</span></legend>
+            <h3 class="form__title"><span class="form__title-text">доп</span></h3>
             <textarea class="form__textarea" name="wishes" cols="30" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             <p class="form__footnote-surely"><sup>⚹</sup>Поля обязательны для заполнения</p>
             <button class="form__btn-sending button" type="submit">отправить заказ</button>
@@ -207,6 +207,6 @@
       </div>
     </div>
   </footer>
-  <script type="text/javascript" src="js/navigation.window.js"></script>
+  <script src="js/navigation.window.js"></script>
 </body>
 </html>
