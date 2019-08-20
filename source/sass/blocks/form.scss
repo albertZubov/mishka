@@ -1,19 +1,19 @@
 .form {
-  padding: 25px 30px 55px;
+  padding: 23px 30px 25px;
 }
 
 .form__preface {
   margin: 0;
   font-size: 13px;
   line-height: 24px;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
 .form__fieldset {
   margin: 0;
   padding: 0;
   border: none;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 
 .form__title {
@@ -31,7 +31,7 @@
   }
 }
 
-.form__title-legend {
+.form__title-text {
   min-width: 62px;
   font-size: 16px;
   line-height: 16px;
@@ -40,7 +40,7 @@
   color: $color-lime;
 }
 
-.form__title-legend--email {
+.form__title-text--email {
   min-width: 81px;
 }
 
@@ -58,11 +58,9 @@
   }
 
   width: 100%;
-  min-height: 162px;
-  margin: 0;
+  min-height: 142px;
   padding: 15px;
-  margin-top: 22px;
-  margin-bottom: 16px;
+  margin: 26px 0 8px 0;
   border: 2px solid $title-color;
   box-sizing: border-box;
   font-family: $font;
@@ -83,7 +81,7 @@
 
 @media (min-width: $tablet-width) {
   .form {
-    padding: 75px 0 50px;
+    padding: 70px 0 0;
   }
 
   .form__main-contents {
@@ -97,8 +95,8 @@
 
   .form__textarea {
     margin: 0;
-    margin-bottom: 50px;
-    width: calc(100% - 165px);
+    margin-bottom: 55px;
+    width: calc(100% - 168px);
     outline: none;
 
     &:hover {
@@ -109,7 +107,6 @@
   .form__list {
     &--radio {
       padding: 0;
-      padding-top: 4px;
     }
 
     &--checkbox {
@@ -136,14 +133,14 @@
     &--tel {
       background: $color-light-gray;
       margin: 0;
-      padding-top: 60px;
+      padding-top: 49px;
       padding-bottom: 15px;
     }
 
     &--email {
       background: $color-light-gray;
       margin-bottom: 50px;
-      padding-top: 15px;
+      padding-top: 10px;
       padding-bottom: 50px;
     }
   }
@@ -152,13 +149,13 @@
     font-size: 17px;
     line-height: 30px;
     padding: 0 50px;
-    margin-bottom: 55px;
+    margin-bottom: 57px;
   }
 
   .form__title {
     width: auto;
-    min-width: 165px;
-    padding-top: 14px;
+    min-width: 168px;
+    padding-top: 17px;
 
     &::after {
       display: none;
@@ -178,10 +175,15 @@
     font-size: 17px;
     line-height: 30px;
     margin-left: auto;
+    padding-bottom: 10px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .form {
+    padding-top: 118px;
+  }
+
   .form__preface {
     padding-left: 225px;
     padding-right: 240px;
@@ -192,7 +194,11 @@
     padding-left: 115px;
 
     &--checkbox {
-      padding-right: 190px;
+      padding-right: 135px;
+    }
+
+    &--tel {
+      padding-top: 51px;
     }
   }
 
@@ -202,9 +208,11 @@
 
   .form__textarea {
     width: calc(100% - 110px);
+    margin-bottom: 50px;
   }
 
   .form__btn-sending {
     margin-left: 110px;
   }
 }
+

@@ -8,18 +8,21 @@
 
 @media (min-width: $tablet-width) {
   .catalog {
-    padding-top: 80px;
+    padding: 76px 50px 0;
+    margin-bottom: 63px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog {
-    padding: 130px 50px 100px 50px;
+    padding: 125px 50px 100px 50px;
     box-sizing: border-box;
+    margin-bottom: 5px;
   }
 
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 5px;
   }
 }

@@ -17,7 +17,7 @@
   font-size: 0;
   line-height: 0;
   border: none;
-  background: url("../img/imgInline/icon-menu-close.svg") no-repeat center center;
+  background: url("../img/svg_inline/icon-menu-close.svg") no-repeat center center;
   width: 20px;
   height: 20px;
 }
@@ -39,7 +39,7 @@
     padding: 0;
 
     &--closed &__toggle {
-      background: url("../img/imgInline/icon-menu-open.svg") no-repeat center center;
+      background: url("../img/svg_inline/icon-menu-open.svg") no-repeat center center;
       width: 20px;
       height: 14px;
     }
@@ -87,7 +87,7 @@
 
   .main-nav__logo {
     margin-right: 0;
-    padding: 20px 0;
+    padding: 21px 0;
     width: 100%;
     text-align: center;
     border-bottom: $border;
@@ -116,7 +116,7 @@
     align-items: center;
     border-right: $border;
     border-left: $border;
-    margin: 0 auto;
+    margin-right: auto;
     order: 3;
     min-height: 46px;
     width: 82px;
@@ -163,10 +163,17 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav {
+    height: 1px;
+    min-height: 88px;
+    justify-content: flex-start;
+  }
+
   .main-nav__logo {
     min-width: auto;
-    margin: 0 auto;
     padding: 0;
+    margin-left: 62px;
+    margin-right: auto;
 
     &:hover {
       opacity: 0.6;
@@ -179,6 +186,9 @@
 
   .main-nav__search {
     margin: 0;
-    margin-left: 30px;
+  }
+
+  .main-nav__delivery {
+    right: 50px;
   }
 }

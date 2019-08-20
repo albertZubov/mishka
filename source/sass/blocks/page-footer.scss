@@ -13,6 +13,8 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
+    padding: 0;
+
     &__logo,
     &__social,
     &__copyright {

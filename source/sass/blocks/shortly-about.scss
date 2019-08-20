@@ -1,6 +1,6 @@
 .shortly-about {
-  padding: 30px 30px 0;
-  margin-bottom: 60px;
+  padding: 27px 30px 0;
+  margin-bottom: 54px;
 }
 
 .shortly-about__title {
@@ -14,14 +14,14 @@
 }
 
 .shortly-about__item {
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
   color: $title-color;
 
   & svg {
-    margin-bottom: 25px;
+    margin-bottom: 19px;
     display: block;
 
     & path {
@@ -32,21 +32,44 @@
 
 @media (min-width: $tablet-width) {
   .shortly-about {
-    padding: 30px 50px 0;
+    padding: 47px 50px 0;
+    margin-bottom: 21px;
   }
 
   .shortly-about__list {
     columns: auto 2;
+    padding-right: 16px;
+  }
+
+  .shortly-about__title {
+    @include font-title-tablet;
+
+    margin-bottom: 47px;
+  }
+
+  .shortly-about__item {
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 64px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .about {
+    padding-bottom: 90px;
+  }
+
   .shortly-about {
     padding-top: 60px;
-    padding-left: 177px;
+    padding-left: 176px;
+    margin-bottom: 28px;
   }
 
   .shortly-about__title {
     @include fontsize-desktop;
+  }
+
+  .shortly-about__list {
+    padding-right: 140px;
   }
 }

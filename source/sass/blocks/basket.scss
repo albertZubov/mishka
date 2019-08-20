@@ -7,6 +7,8 @@
 }
 
 .basket__link {
+  @include title-h3;
+
   text-decoration: none;
   color: $color-gray;
   font-weight: 700;

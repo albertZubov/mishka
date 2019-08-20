@@ -7,7 +7,7 @@
 
 .production-process__title {
   text-decoration: none;
-  margin-left: 25px;
+  margin-left: 24px;
 
   & h3 {
     @include title-h3;
@@ -16,7 +16,7 @@
 
 .production-process__title-blocks {
   display: flex;
-  padding: 25px 40px 25px 33px;
+  padding: 23px 40px 22px 33px;
   align-items: center;
 
   & svg {
@@ -28,8 +28,8 @@
   margin: 0;
   font-size: 13px;
   line-height: 24px;
-  padding: 30px 33px 0 33px;
-  margin-bottom: 27px;
+  padding: 28px 33px 0 33px;
+  margin-bottom: 25px;
 }
 
 .production-process__btn-order {
@@ -91,10 +91,11 @@
     line-height: 30px;
     padding: 0 40px;
     order: 2;
+    margin-bottom: 35px;
   }
 
   .production-process__title-blocks {
-    padding: 38px 40px;
+    padding: 34px 40px 27px;
     order: 1;
   }
 
@@ -127,7 +128,7 @@
   .production-process {
     flex-direction: column;
     position: relative;
-    padding: 45px 55px 60px calc(65% + 82px);
+    padding: 40px 55px 62px calc(65% + 77px);
     min-height: 457px;
     box-sizing: border-box;
   }
@@ -139,10 +140,8 @@
   }
 
   .production-process__title {
-    margin: 0;
-    margin-top: 25px;
     padding-right: 20px;
-    margin-bottom: 35px;
+    margin: 22px 0 32px;
   }
 
   .production-process__btn-order {
@@ -158,6 +157,6 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: 714px;
+    width: 682px;
   }
 }

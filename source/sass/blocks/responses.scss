@@ -6,12 +6,13 @@
 .responses__title {
   @include title-h2;
 
-  margin-bottom: 30px;
+  margin-bottom: 23px;
 }
 
 .responses__description {
   line-height: 30px;
   margin: 0;
+  margin-bottom: 30px;
 }
 
 .responses__author {
@@ -46,11 +47,11 @@
   padding: 0;
 
   &--following {
-    background: url("../img/imgInline/icon-left-arrow.svg") no-repeat center;
+    background: url("../img/svg_inline/icon-left-arrow.svg") no-repeat center;
   }
 
   &--previous {
-    background: url("../img/imgInline/icon-right-arrow.svg") no-repeat center;
+    background: url("../img/svg_inline/icon-right-arrow.svg") no-repeat center;
   }
 
   &:hover {
@@ -76,13 +77,13 @@
       background-size: contain;
     }
 
-    padding: 80px 50px 45px;
+    padding: 78px 50px 45px;
     background: url("../img/review@1x.jpg") no-repeat center left;
   }
 
   .responses__title {
-    font-size: 43px;
-    line-height: 50px;
+    @include font-title-tablet;
+
     margin: 0;
     margin-right: auto;
   }
@@ -93,9 +94,11 @@
   }
 
   .responses__description {
+    font-size: 17px;
+    line-height: 30px;
     order: 3;
     margin-bottom: 60px;
-    margin-top: 50px;
+    margin-top: 46px;
   }
 
   .responses__author {
@@ -123,12 +126,21 @@
 
 @media (min-width: $desktop-width) {
   .responses {
-    padding: 50px 0 50px 177px;
+    padding: 72px 0 97px 176px;
   }
 
   .responses__title {
     @include fontsize-desktop;
 
     margin-top: 0;
+  }
+
+  .responses__btn {
+    align-self: flex-end;
+  }
+
+  .responses__description {
+    padding-right: 95px;
+    margin-bottom: 42px;
   }
 }

@@ -41,6 +41,11 @@
   margin: 0;
 }
 
+@mixin font-title-tablet {
+  font-size: 43px;
+  line-height: 50px;
+}
+
 @mixin list-dumping {
   margin: 0;
   padding: 0;
@@ -101,7 +106,12 @@
     width: 100%;
     height: 34px;
     position: absolute;
-    bottom: -1px;
+    bottom: -15px;
     background: url("../img/imgInline/bg-zigzag-fill.svg") repeat-x center;
+    background-size: 100%;
   }
+}
+
+@mixin animation-order {
+  transition: opacity $speed $easing, visibility $speed $easing;
 }
