@@ -17,6 +17,15 @@ var include = require("posthtml-include");
 var del = require("del");
 var htmlmin = require("gulp-htmlmin");
 var jsmin = require("gulp-uglify");
+var deploy = require('gulp-gh-pages');
+
+/**
+ * Push build to gh-pages
+ */
+gulp.task('deploy', function () {
+  return gulp.src("build/**/*")
+    .pipe(deploy())
+});
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
