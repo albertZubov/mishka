@@ -53,6 +53,6 @@
   },
   "dependencies": {
     "cwebp": "^2.0.3",
-    "postcss": "^7.0.17"
+    "postcss": "^7.0.36"
   }
 }
